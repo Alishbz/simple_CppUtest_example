@@ -1,0 +1,2265 @@
+###############################################################################
+#
+# IAR ELF Linker V9.20.1.318/W64 for ARM                  20/Jul/2023  14:44:45
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\exe\test_project.out
+#    Map file     =
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\List\test_project.map
+#    Command line =
+#        -f C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Exe\test_project.out.rsp
+#        (C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\CodeMemoryReportFormatter.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\CommandLineArguments.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\CommandLineTestRunner.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\IEEE754ExceptionsPlugin.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\JUnitTestOutput.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\Work_Space\Project\led_driver\led_driver.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\Work_Space\Testers\led_driver_test.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\main.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\MemoryLeakDetector.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\MemoryLeakWarningPlugin.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\MemoryReportAllocator.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\MemoryReporterPlugin.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\MemoryReportFormatter.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\MockActualCall.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\MockExpectedCall.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\MockExpectedCallsList.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\MockFailure.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\MockNamedValue.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\MockSupport.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\MockSupport_c.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\MockSupportPlugin.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src\OrderedTest.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\Work_Space\Project\queue\queue.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\Work_Space\Testers\queue_test.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\SimpleMutex.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\SimpleString.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\TeamCityTestOutput.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\TestFailure.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\TestFilter.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\TestHarness_c.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\TestMemoryAllocator.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\TestOutput.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\TestPlugin.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\TestRegistry.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\TestResult.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\TestTestingFixture.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src\Utest.o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\platforms\UtestPlatform.o
+#        --no_out_extension -o
+#        C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\exe\test_project.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\List\test_project.map
+#        --config C:\Users\SAYKAL\Desktop\iar_cpputest\test_project.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                     = *
+__CPP_Exceptions              = Disabled
+__CPP_Language                = C++14
+__CPP_Library                 = DLib
+__CPP_Runtime                 = 1
+__Heap_Handler                = DLMalloc
+__SystemLibrary               = DLib
+__dlib_dynamic_initialization = normal
+__dlib_jmp_buf_num_elements   = 16
+__dlib_version                = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The advanced heap was selected because the application calls memory
+allocation functions outside of system library functions, and there
+are calls to deallocation functions in the application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x7'ffff] { ro };
+define block CSTACK with size = 3'840, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 60K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x200f'ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+initialize by copy { rw };
+
+  Section                Kind         Address      Size  Object
+  -------                ----         -------      ----  ------
+"A0":                                              0x3c
+  .intvec                ro code          0x0      0x3c  cstartup.o [11]
+                                       - 0x3c      0x3c
+
+"P1":                                            0xdb9a
+  .text                  ro code         0x3c    0x1d44  dlmalloc.o [8]
+  .text                  ro code       0x1d80       0x6  abort.o [8]
+  .text                  ro code       0x1d86      0x30  xgetmemchunk.o [8]
+  .text                  ro code       0x1db6      0x1a  xsnprout.o [8]
+  .text                  ro code       0x1dd0      0x94  ABImemcpy_unaligned.o [11]
+  .text                  ro code       0x1e64      0x14  exit.o [12]
+  .text                  ro code       0x1e78      0x86  iarttio.o [12]
+  .text                  ro code       0x1efe       0xa  XShttio.o [8]
+  .text                  ro code       0x1f08     0xf82  xprintffull_nomb.o [8]
+  .text                  ro code       0x2e8a       0x6  MemoryLeakDetector.o [6]
+  .text                  ro code       0x2e90      0x20  strchr.o [11]
+  .text                  ro code       0x2eb0      0x2e  xfail_s.o [8]
+  .text                  ro code       0x2ede       0x2  queue_test.o [4]
+  .text                  ro code       0x2ee0      0x54  strlen.o [11]
+  .text                  ro code       0x2f34      0x94  memchr.o [11]
+  .text                  ro code       0x2fc8      0x70  frexp.o [10]
+  .text                  ro code       0x3038      0x34  DblCmpLe.o [10]
+  .text                  ro code       0x306c      0x34  DblCmpGe.o [10]
+  .text                  ro code       0x30a0     0x104  ldexp.o [10]
+  .text                  ro code       0x31a4       0xe  DblToS32.o [10]
+  .text                  ro code       0x31b2       0xe  S32ToDbl.o [10]
+  .text                  ro code       0x31c0      0x12  DblSub.o [10]
+  .text                  ro code       0x31d2      0x12  DblDiv.o [10]
+  .text                  ro code       0x31e4       0xe  DblToU32.o [10]
+  .text                  ro code       0x31f2       0xe  U32ToDbl.o [10]
+  .text                  ro code       0x3200      0x12  DblMul.o [10]
+  .text                  ro code       0x3212       0x2  queue_test.o [4]
+  .text                  ro code       0x3214     0x1a8  I32DivMod.o [11]
+  .text                  ro code       0x33bc     0x184  I64DivMod.o [11]
+  .text                  ro code       0x3540       0x4  IntDivZer.o [11]
+  .text                  ro code       0x3544       0x4  I64DivZer.o [11]
+  .text                  ro code       0x3548     0xbc4  CommandLineArguments.o [6]
+  .text                  ro code       0x410c     0x500  MemoryLeakWarningPlugin.o [6]
+  .text                  ro code       0x460c     0x7c8  SimpleString.o [6]
+  .text                  ro code       0x4dd4      0x74  TestFilter.o [6]
+  .text                  ro code       0x4e48       0xe  CommandLineArguments.o [6]
+  .text                  ro code       0x4e56       0x2  TestPlugin.o [6]
+  .text                  ro code       0x4e58     0x280  TestMemoryAllocator.o [6]
+  .text                  ro code       0x50d8     0xb24  MemoryLeakDetector.o [6]
+  .text                  ro code       0x5bfc     0x1d0  TestPlugin.o [6]
+  .text                  ro code       0x5dcc       0x4  CommandLineTestRunner.o [6]
+  .text                  ro code       0x5dd0     0x5d8  TestFailure.o [6]
+  .text                  ro code       0x63a8     0x5fa  Utest.o [6]
+  .text                  ro code       0x69a2      0x32  cxxabi.o [9]
+  .text                  ro code       0x69d4      0x18  MemoryLeakDetector.o [6]
+  .text                  ro code       0x69ec      0x28  SimpleMutex.o [6]
+  .text                  ro code       0x6a14      0x40  Utest.o [6]
+  .text                  ro code       0x6a54       0x8  Utest.o [6]
+  .text                  ro code       0x6a5c       0xe  MemoryLeakWarningPlugin.o [6]
+  .text                  ro code       0x6a6a       0xe  TestFailure.o [6]
+  .text                  ro code       0x6a78       0xe  TestFailure.o [6]
+  .text                  ro code       0x6a86       0x2  TestPlugin.o [6]
+  .text                  ro code       0x6a88     0x428  TestRegistry.o [6]
+  .text                  ro code       0x6eb0      0xae  cppinit.o [8]
+  .rodata                const         0x6f5e       0x1  unwind_debug.o [12]
+  .rodata                const         0x6f5f       0x1  xlocale_c.o [8]
+  .text                  ro code       0x6f60      0x18  CommandLineTestRunner.o [6]
+  .text                  ro code       0x6f78     0x138  TestResult.o [6]
+  .text                  ro code       0x70b0     0x83e  TestOutput.o [6]
+  .rodata                const         0x78ee       0x1  xlocale_c.o [8]
+  .text                  ro code       0x78f0      0xc8  UtestPlatform.o [7]
+  .text                  ro code       0x79b8       0x4  TestOutput.o [6]
+  .text                  ro code       0x79bc       0x4  TestOutput.o [6]
+  .text                  ro code       0x79c0       0x4  TestOutput.o [6]
+  .text                  ro code       0x79c4       0x4  TestOutput.o [6]
+  .text                  ro code       0x79c8       0x4  TestOutput.o [6]
+  .text                  ro code       0x79cc      0x28  setjmp.o [10]
+  .text                  ro code       0x79f4       0xa  clock.o [12]
+  .text                  ro code       0x79fe       0x4  time_trampoline.o [8]
+  .text                  ro code       0x7a02       0xe  ctime64.o [8]
+  .text                  ro code       0x7a10      0x14  time64.o [12]
+  .text                  ro code       0x7a24      0x20  localtim64.o [8]
+  .text                  ro code       0x7a44      0x2e  asctime.o [8]
+  .text                  ro code       0x7a72       0x4  xTzoff_nop.o [8]
+  .text                  ro code       0x7a76     0x19c  xttotm64.o [8]
+  .text                  ro code       0x7c12       0xa  xlocale_c.o [8]
+  .text                  ro code       0x7c1c      0xe0  xstrftim.o [8]
+  .text                  ro code       0x7cfc     0x116  xDaysTo64.o [8]
+  .text                  ro code       0x7e12       0x6  xisdst_nop64.o [8]
+  .text                  ro code       0x7e18     0x8ac  xgentime.o [8]
+  .text                  ro code       0x86c4      0x40  xgettime.o [8]
+  .text                  ro code       0x8704      0x94  iar_Stolx.o [8]
+  .text                  ro code       0x8798       0x4  getzone_nop.o [8]
+  .text                  ro code       0x879c     0x148  iar_Stoulx.o [8]
+  .text                  ro code       0x88e4     0xaac  queue_test.o [4]
+  .text                  ro code       0x9390      0x18  queue_test.o [4]
+  .text                  ro code       0x93a8      0x18  queue_test.o [4]
+  .text                  ro code       0x93c0      0x18  queue_test.o [4]
+  .text                  ro code       0x93d8      0x18  queue_test.o [4]
+  .text                  ro code       0x93f0      0x18  queue_test.o [4]
+  .text                  ro code       0x9408      0x18  queue_test.o [4]
+  .text                  ro code       0x9420     0x23a  queue.o [3]
+  .text                  ro code       0x965a       0x8  heaptramp0.o [8]
+  .text                  ro code       0x9664     0x620  JUnitTestOutput.o [6]
+  .text                  ro code       0x9c84      0x1c  JUnitTestOutput.o [6]
+  .text                  ro code       0x9ca0      0x16  JUnitTestOutput.o [6]
+  .text                  ro code       0x9cb6       0xe  JUnitTestOutput.o [6]
+  .text                  ro code       0x9cc4      0x24  JUnitTestOutput.o [6]
+  .text                  ro code       0x9ce8      0x30  JUnitTestOutput.o [6]
+  .text                  ro code       0x9d18      0x10  JUnitTestOutput.o [6]
+  .text                  ro code       0x9d28     0x55c  led_driver_test.o [4]
+  .text                  ro code       0xa284      0x18  led_driver_test.o [4]
+  .text                  ro code       0xa29c      0x18  led_driver_test.o [4]
+  .text                  ro code       0xa2b4      0x18  led_driver_test.o [4]
+  .text                  ro code       0xa2cc      0x3e  led_driver.o [2]
+  .text                  ro code       0xa30c     0x3c0  CommandLineTestRunner.o [6]
+  .text                  ro code       0xa6cc       0xe  CommandLineTestRunner.o [6]
+  .text                  ro code       0xa6da       0xe  CommandLineTestRunner.o [6]
+  .text                  ro code       0xa6e8     0x398  TeamCityTestOutput.o [6]
+  .text                  ro code       0xaa80       0x8  TeamCityTestOutput.o [6]
+  .text                  ro code       0xaa88       0x8  TeamCityTestOutput.o [6]
+  .rodata                const         0xaa90     0x114  MemoryLeakDetector.o [6]
+  .text                  ro code       0xaba4      0xf8  MockSupport.o [5]
+  .text                  ro code       0xac9c      0x10  MockSupport.o [5]
+  .text                  ro code       0xacac      0x30  MockExpectedCallsList.o [5]
+  .text                  ro code       0xacdc      0x14  MockExpectedCall.o [5]
+  .text                  ro code       0xacf0      0x4c  MockNamedValue.o [5]
+  .text                  ro code       0xad3c       0xe  MockNamedValue.o [5]
+  .rodata                const         0xad4c      0xc0  MockSupport.o [5]
+  .rodata                const         0xae0c      0xb8  CommandLineArguments.o [6]
+  .rodata                const         0xaec4      0xac  xgentime.o [8]
+  .rodata                const         0xaf70      0xa8  Utest.o [6]
+  .rodata                const         0xb018      0xa4  led_driver_test.o [4]
+  .rodata                const         0xb0bc      0xa4  led_driver_test.o [4]
+  .rodata                const         0xb160      0xa4  led_driver_test.o [4]
+  .rodata                const         0xb204      0xa4  led_driver_test.o [4]
+  .rodata                const         0xb2a8      0xa4  queue_test.o [4]
+  .rodata                const         0xb34c      0xa4  queue_test.o [4]
+  .rodata                const         0xb3f0      0xa4  queue_test.o [4]
+  .rodata                const         0xb494      0xa4  queue_test.o [4]
+  .rodata                const         0xb538      0xa4  queue_test.o [4]
+  .rodata                const         0xb5dc      0xa4  queue_test.o [4]
+  .rodata                const         0xb680      0xa4  queue_test.o [4]
+  .rodata                const         0xb724      0xa4  Utest.o [6]
+  .rodata                const         0xb7c8      0xa0  MockExpectedCallsList.o [5]
+  .rodata                const         0xb868      0x88  JUnitTestOutput.o [6]
+  .rodata                const         0xb8f0      0x88  MockExpectedCall.o [5]
+  .rodata                const         0xb978      0x88  xlocale_c.o [8]
+  .text                  ro code       0xba00      0x78  lz77_init_single.o [11]
+  .text                  ro code       0xba78      0x74  ABImemset.o [11]
+  .rodata                const         0xbaec      0x70  JUnitTestOutput.o [6]
+  .text                  ro code       0xbb5c      0x70  MemoryLeakWarningPlugin.o [6]
+  .rodata                const         0xbbcc      0x68  xprintffull_nomb.o [8]
+  .rodata                const         0xbc34      0x64  TestOutput.o [6]
+  .rodata                const         0xbc98      0x60  MemoryLeakDetector.o [6]
+  .rodata                const         0xbcf8      0x60  TestRegistry.o [6]
+  .rodata                const         0xbd58      0x5c  CommandLineTestRunner.o [6]
+  .rodata                const         0xbdb4      0x5c  TeamCityTestOutput.o [6]
+  .rodata                const         0xbe10      0x5c  TestOutput.o [6]
+  .rodata                const         0xbe6c      0x58  CommandLineArguments.o [6]
+  .rodata                const         0xbec4      0x58  MemoryLeakDetector.o [6]
+  .rodata                const         0xbf1c      0x58  TestMemoryAllocator.o [6]
+  .rodata                const         0xbf74      0x58  xlocale_c.o [8]
+  .text                  ro code       0xbfcc      0x58  cstartup.o [11]
+  .text                  ro code       0xc024      0x28  fpinit.o [10]
+  .text                  ro code       0xc04c      0x30  cmain.o [11]
+  .text                  ro code       0xc07c       0x4  low_level_init.o [8]
+  .text                  ro code       0xc080      0x30  data_init.o [11]
+  .text                  ro code       0xc0b0      0x1c  main.o [1]
+  Veneer                 ro code       0xc0cc       0x8  - Linker created -
+  .text                  ro code       0xc0d4       0x4  exit.o [8]
+  .text                  ro code       0xc0d8      0x14  cexit.o [11]
+  .rodata                const         0xc0ec      0x54  JUnitTestOutput.o [6]
+  .rodata                const         0xc140      0x50  SimpleString.o [6]
+  .rodata                const         0xc190      0x50  iar_Stoulx.o [8]
+  .rodata                const         0xc1e0      0x4c  led_driver_test.o [4]
+  .rodata                const         0xc22c      0x4c  led_driver_test.o [4]
+  .rodata                const         0xc278      0x4c  led_driver_test.o [4]
+  .rodata                const         0xc2c4      0x4c  led_driver_test.o [4]
+  .rodata                const         0xc310      0x4c  Utest.o [6]
+  .rodata                const         0xc35c      0x4c  Utest.o [6]
+  .rodata                const         0xc3a8      0x4c  xlocale_c.o [8]
+  .rodata                const         0xc3f4      0x48  MemoryLeakDetector.o [6]
+  .rodata                const         0xc43c      0x48  MemoryLeakWarningPlugin.o [6]
+  .rodata                const         0xc484      0x48  queue_test.o [4]
+  .rodata                const         0xc4cc      0x48  queue_test.o [4]
+  .rodata                const         0xc514      0x48  queue_test.o [4]
+  .rodata                const         0xc55c      0x48  queue_test.o [4]
+  .rodata                const         0xc5a4      0x48  queue_test.o [4]
+  .rodata                const         0xc5ec      0x48  queue_test.o [4]
+  .rodata                const         0xc634      0x48  queue_test.o [4]
+  .rodata                const         0xc67c      0x44  TestPlugin.o [6]
+  .rodata                const         0xc6c0      0x44  TestPlugin.o [6]
+  .rodata                const         0xc704      0x44  TestPlugin.o [6]
+  .rodata                const         0xc748      0x44  TestResult.o [6]
+  .rodata                const         0xc78c      0x40  Utest.o [6]
+  .text                  ro code       0xc7cc      0x40  vsnprint.o [8]
+  .rodata                const         0xc80c      0x3c  JUnitTestOutput.o [6]
+  .rodata                const         0xc848      0x3c  UtestPlatform.o [7]
+  .rodata                const         0xc884      0x38  JUnitTestOutput.o [6]
+  .rodata                const         0xc8bc      0x38  MemoryLeakDetector.o [6]
+  .text                  ro code       0xc8f4      0x38  zero_init3.o [11]
+  .rodata                const         0xc92c      0x34  xgentime.o [8]
+  .rodata                const         0xc960      0x30  MemoryLeakDetector.o [6]
+  .rodata                const         0xc990      0x30  TestMemoryAllocator.o [6]
+  .rodata                const         0xc9c0      0x30  TestMemoryAllocator.o [6]
+  .rodata                const         0xc9f0      0x30  xlocale_c.o [8]
+  .rodata                const         0xca20      0x30  xDaysTo64.o [8]
+  .text                  ro code       0xca50      0x2e  led_driver_test.o [4]
+  .text                  ro code       0xca7e      0x2e  led_driver_test.o [4]
+  .rodata                const         0xcaac      0x2c  JUnitTestOutput.o [6]
+  .rodata                const         0xcad8      0x2c  MemoryLeakDetector.o [6]
+  .rodata                const         0xcb04      0x2c  TestFailure.o [6]
+  .rodata                const         0xcb30      0x2c  TestFailure.o [6]
+  .rodata                const         0xcb5c      0x2c  TestFailure.o [6]
+  .rodata                const         0xcb88      0x2c  TestFailure.o [6]
+  .rodata                const         0xcbb4      0x28  MemoryLeakDetector.o [6]
+  .rodata                const         0xcbdc      0x28  TestFailure.o [6]
+  .text                  ro code       0xcc04      0x28  Utest.o [6]
+  .text                  ro code       0xcc2c      0x28  cmain_call_ctors.o [11]
+  .rodata                const         0xcc54      0x24  MemoryLeakDetector.o [6]
+  .rodata                const         0xcc78      0x24  MockNamedValue.o [5]
+  .rodata                const         0xcc9c      0x24  TeamCityTestOutput.o [6]
+  .rodata                const         0xccc0      0x24  TeamCityTestOutput.o [6]
+  .text                  ro code       0xcce4      0x24  led_driver_test.o [4]
+  .text                  ro code       0xcd08       0x8  led_driver_test.o [4]
+  .text                  ro code       0xcd10      0x1c  led_driver_test.o [4]
+  .text                  ro code       0xcd2c      0x24  led_driver_test.o [4]
+  .text                  ro code       0xcd50      0x24  led_driver_test.o [4]
+  .text                  ro code       0xcd74      0x22  iarwrite.o [12]
+  .iar.init_table        const         0xcd98      0x24  - Linker created -
+  .rodata                const         0xcdbc      0x20  CommandLineTestRunner.o [6]
+  .rodata                const         0xcddc      0x20  led_driver_test.o [4]
+  .rodata                const         0xcdfc      0x20  led_driver_test.o [4]
+  .rodata                const         0xce1c      0x20  led_driver_test.o [4]
+  .rodata                const         0xce3c      0x20  led_driver_test.o [4]
+  .rodata                const         0xce5c      0x20  MemoryLeakDetector.o [6]
+  .rodata                const         0xce7c      0x20  queue_test.o [4]
+  .rodata                const         0xce9c      0x20  queue_test.o [4]
+  .rodata                const         0xcebc      0x20  queue_test.o [4]
+  .rodata                const         0xcedc      0x20  queue_test.o [4]
+  .rodata                const         0xcefc      0x20  queue_test.o [4]
+  .rodata                const         0xcf1c      0x20  queue_test.o [4]
+  .rodata                const         0xcf3c      0x20  queue_test.o [4]
+  .rodata                const         0xcf5c      0x20  TeamCityTestOutput.o [6]
+  .rodata                const         0xcf7c      0x20  TeamCityTestOutput.o [6]
+  .rodata                const         0xcf9c      0x20  TeamCityTestOutput.o [6]
+  .rodata                const         0xcfbc      0x20  TeamCityTestOutput.o [6]
+  .rodata                const         0xcfdc      0x20  TestFailure.o [6]
+  .rodata                const         0xcffc      0x20  TestMemoryAllocator.o [6]
+  .rodata                const         0xd01c      0x20  Utest.o [6]
+  .rodata                const         0xd03c      0x20  xfail_s.o [8]
+  .text                  ro code       0xd05c      0x20  led_driver_test.o [4]
+  .text                  ro code       0xd07c      0x20  led_driver_test.o [4]
+  .text                  ro code       0xd09c      0x20  led_driver_test.o [4]
+  .text                  ro code       0xd0bc      0x20  queue_test.o [4]
+  .text                  ro code       0xd0dc      0x18  queue_test.o [4]
+  .text                  ro code       0xd0f4       0x8  queue_test.o [4]
+  .text                  ro code       0xd0fc      0x18  queue_test.o [4]
+  .text                  ro code       0xd114      0x20  queue_test.o [4]
+  .text                  ro code       0xd134      0x18  queue_test.o [4]
+  .text                  ro code       0xd14c      0x20  queue_test.o [4]
+  .text                  ro code       0xd16c      0x18  queue_test.o [4]
+  .text                  ro code       0xd184      0x20  queue_test.o [4]
+  .text                  ro code       0xd1a4      0x18  queue_test.o [4]
+  .text                  ro code       0xd1bc      0x20  queue_test.o [4]
+  .text                  ro code       0xd1dc      0x18  queue_test.o [4]
+  .text                  ro code       0xd1f4      0x20  queue_test.o [4]
+  .text                  ro code       0xd214      0x18  queue_test.o [4]
+  .text                  ro code       0xd22c      0x20  putchar.o [8]
+  .text                  ro code       0xd24c       0xc  write.o [12]
+  .text                  ro code       0xd258      0x14  dwrite.o [12]
+  .text                  ro code       0xd26c      0x20  iarwstd.o [12]
+  .rodata                const         0xd28c      0x1c  JUnitTestOutput.o [6]
+  .rodata                const         0xd2a8      0x1c  JUnitTestOutput.o [6]
+  .rodata                const         0xd2c4      0x1c  MockFailure.o [5]
+  .rodata                const         0xd2e0      0x1c  MockSupport_c.o [5]
+  .rodata                const         0xd2fc      0x1c  TestMemoryAllocator.o [6]
+  .rodata                const         0xd318      0x1c  TestMemoryAllocator.o [6]
+  .rodata                const         0xd334      0x18  led_driver_test.o [4]
+  .rodata                const         0xd34c      0x18  led_driver_test.o [4]
+  .rodata                const         0xd364      0x18  MemoryLeakDetector.o [6]
+  .rodata                const         0xd37c      0x18  MemoryLeakDetector.o [6]
+  .rodata                const         0xd394      0x18  queue_test.o [4]
+  .rodata                const         0xd3ac      0x18  TestMemoryAllocator.o [6]
+  .text                  ro code       0xd3c4      0x18  MockSupport_c.o [5]
+  .text                  ro code       0xd3dc       0x8  MockSupport_c.o [5]
+  .rodata                const         0xd3e4      0x14  CommandLineTestRunner.o [6]
+  .rodata                const         0xd3f8      0x14  CommandLineTestRunner.o [6]
+  .rodata                const         0xd40c      0x14  led_driver_test.o [4]
+  .rodata                const         0xd420      0x14  led_driver_test.o [4]
+  .rodata                const         0xd434      0x14  MemoryLeakWarningPlugin.o [6]
+  .rodata                const         0xd448      0x14  queue_test.o [4]
+  .rodata                const         0xd45c      0x14  queue_test.o [4]
+  .rodata                const         0xd470      0x14  queue_test.o [4]
+  .rodata                const         0xd484      0x14  queue_test.o [4]
+  .rodata                const         0xd498      0x14  queue_test.o [4]
+  .rodata                const         0xd4ac      0x14  Utest.o [6]
+  .rodata                const         0xd4c0      0x14  Utest.o [6]
+  .rodata                const         0xd4d4      0x14  Utest.o [6]
+  .text                  ro code       0xd4e8      0x14  led_driver_test.o [4]
+  .text                  ro code       0xd4fc       0xe  led_driver_test.o [4]
+  .text                  ro code       0xd50a      0x14  led_driver_test.o [4]
+  .text                  ro code       0xd51e       0xe  led_driver_test.o [4]
+  .text                  ro code       0xd52c       0x8  led_driver_test.o [4]
+  .text                  ro code       0xd534      0x14  led_driver_test.o [4]
+  .text                  ro code       0xd548       0xe  led_driver_test.o [4]
+  .text                  ro code       0xd556      0x14  led_driver_test.o [4]
+  .text                  ro code       0xd56a       0xe  led_driver_test.o [4]
+  .text                  ro code       0xd578      0x14  MemoryLeakWarningPlugin.o [6]
+  .text                  ro code       0xd58c       0x2  MemoryLeakWarningPlugin.o [6]
+  .text                  ro code       0xd58e      0x14  queue_test.o [4]
+  .text                  ro code       0xd5a2       0xe  queue_test.o [4]
+  .text                  ro code       0xd5b0      0x14  queue_test.o [4]
+  .text                  ro code       0xd5c4       0xe  queue_test.o [4]
+  .text                  ro code       0xd5d2       0x8  queue_test.o [4]
+  .text                  ro code       0xd5da      0x14  queue_test.o [4]
+  .text                  ro code       0xd5ee       0xe  queue_test.o [4]
+  .text                  ro code       0xd5fc      0x14  queue_test.o [4]
+  .text                  ro code       0xd610       0xe  queue_test.o [4]
+  .text                  ro code       0xd61e      0x14  queue_test.o [4]
+  .text                  ro code       0xd632       0xe  queue_test.o [4]
+  .text                  ro code       0xd640      0x14  queue_test.o [4]
+  .text                  ro code       0xd654       0xe  queue_test.o [4]
+  .text                  ro code       0xd662      0x14  queue_test.o [4]
+  .text                  ro code       0xd676       0xe  queue_test.o [4]
+  .text                  ro code       0xd684      0x14  TestFailure.o [6]
+  .text                  ro code       0xd698      0x14  TestFailure.o [6]
+  .text                  ro code       0xd6ac      0x14  TestFailure.o [6]
+  .text                  ro code       0xd6c0      0x14  TestOutput.o [6]
+  .text                  ro code       0xd6d4      0x14  memset.o [11]
+  .rodata                const         0xd6e8      0x10  CommandLineArguments.o [6]
+  .rodata                const         0xd6f8      0x10  CommandLineArguments.o [6]
+  .rodata                const         0xd708      0x10  JUnitTestOutput.o [6]
+  .rodata                const         0xd718      0x10  JUnitTestOutput.o [6]
+  .rodata                const         0xd728      0x10  JUnitTestOutput.o [6]
+  .rodata                const         0xd738      0x10  JUnitTestOutput.o [6]
+  .rodata                const         0xd748      0x10  JUnitTestOutput.o [6]
+  .rodata                const         0xd758      0x10  MemoryLeakDetector.o [6]
+  .rodata                const         0xd768      0x10  queue_test.o [4]
+  .rodata                const         0xd778      0x10  SimpleString.o [6]
+  .rodata                const         0xd788      0x10  TeamCityTestOutput.o [6]
+  .rodata                const         0xd798      0x10  TeamCityTestOutput.o [6]
+  .rodata                const         0xd7a8      0x10  TestMemoryAllocator.o [6]
+  .rodata                const         0xd7b8      0x10  TestMemoryAllocator.o [6]
+  .rodata                const         0xd7c8      0x10  TestOutput.o [6]
+  .rodata                const         0xd7d8      0x10  TestOutput.o [6]
+  .rodata                const         0xd7e8      0x10  Utest.o [6]
+  .rodata                const         0xd7f8      0x10  Utest.o [6]
+  .rodata                const         0xd808      0x10  Utest.o [6]
+  .rodata                const         0xd818      0x10  Utest.o [6]
+  .text                  ro code       0xd828      0x10  MockSupport_c.o [5]
+  SHT$$PREINIT_ARRAY                   0xd838       0x0  <Block>
+  SHT$$INIT_ARRAY                      0xd838      0x10  <Block>
+    .init_array          const         0xd838       0x4  led_driver_test.o [4]
+    .init_array          const         0xd83c       0x4  MockSupport.o [5]
+    .init_array          const         0xd840       0x4  MockSupport_c.o [5]
+    .init_array          const         0xd844       0x4  queue_test.o [4]
+  __iar_tls$$INIT_ARRAY                0xd848       0x0  <Block>
+  .text                  ro code       0xd848       0xe  led_driver_test.o [4]
+  .text                  ro code       0xd856       0xe  led_driver_test.o [4]
+  .text                  ro code       0xd864       0xe  led_driver_test.o [4]
+  .text                  ro code       0xd872       0xe  queue_test.o [4]
+  .text                  ro code       0xd880       0xe  queue_test.o [4]
+  .text                  ro code       0xd88e       0xe  queue_test.o [4]
+  .text                  ro code       0xd89c       0xe  queue_test.o [4]
+  .text                  ro code       0xd8aa       0xe  queue_test.o [4]
+  .text                  ro code       0xd8b8       0xe  queue_test.o [4]
+  .text                  ro code       0xd8c6       0xe  TestMemoryAllocator.o [6]
+  .text                  ro code       0xd8d4       0xe  TestPlugin.o [6]
+  .rodata                const         0xd8e4       0xc  CommandLineArguments.o [6]
+  .rodata                const         0xd8f0       0xc  JUnitTestOutput.o [6]
+  .rodata                const         0xd8fc       0xc  JUnitTestOutput.o [6]
+  .rodata                const         0xd908       0xc  JUnitTestOutput.o [6]
+  .rodata                const         0xd914       0xc  MemoryLeakDetector.o [6]
+  .rodata                const         0xd920       0xc  MemoryLeakDetector.o [6]
+  .rodata                const         0xd92c       0xc  queue_test.o [4]
+  .rodata                const         0xd938       0xc  TeamCityTestOutput.o [6]
+  .rodata                const         0xd944       0xc  TeamCityTestOutput.o [6]
+  .rodata                const         0xd950       0xc  TestFailure.o [6]
+  .rodata                const         0xd95c       0xc  TestFailure.o [6]
+  .rodata                const         0xd968       0xc  TestMemoryAllocator.o [6]
+  .rodata                const         0xd974       0xc  TestOutput.o [6]
+  .rodata                const         0xd980       0xc  TestOutput.o [6]
+  .rodata                const         0xd98c       0xc  TestOutput.o [6]
+  .rodata                const         0xd998       0xc  TestOutput.o [6]
+  .rodata                const         0xd9a4       0xc  TestOutput.o [6]
+  .rodata                const         0xd9b0       0xc  TestOutput.o [6]
+  .rodata                const         0xd9bc       0x8  CommandLineArguments.o [6]
+  .rodata                const         0xd9c4       0x8  CommandLineArguments.o [6]
+  .rodata                const         0xd9cc       0x8  CommandLineArguments.o [6]
+  .rodata                const         0xd9d4       0x8  CommandLineArguments.o [6]
+  .rodata                const         0xd9dc       0x8  CommandLineArguments.o [6]
+  .rodata                const         0xd9e4       0x8  CommandLineArguments.o [6]
+  .rodata                const         0xd9ec       0x8  JUnitTestOutput.o [6]
+  .rodata                const         0xd9f4       0x8  JUnitTestOutput.o [6]
+  .rodata                const         0xd9fc       0x8  main.o [1]
+  .rodata                const         0xda04       0x8  MemoryLeakDetector.o [6]
+  .rodata                const         0xda0c       0x8  MemoryLeakDetector.o [6]
+  .rodata                const         0xda14       0x8  MemoryLeakDetector.o [6]
+  .rodata                const         0xda1c       0x8  queue_test.o [4]
+  .rodata                const         0xda24       0x8  TestFailure.o [6]
+  .rodata                const         0xda2c       0x8  TestFailure.o [6]
+  .rodata                const         0xda34       0x8  TestMemoryAllocator.o [6]
+  .rodata                const         0xda3c       0x8  TestMemoryAllocator.o [6]
+  .rodata                const         0xda44       0x8  TestMemoryAllocator.o [6]
+  .rodata                const         0xda4c       0x8  TestMemoryAllocator.o [6]
+  .rodata                const         0xda54       0x8  TestMemoryAllocator.o [6]
+  .rodata                const         0xda5c       0x8  TestOutput.o [6]
+  .rodata                const         0xda64       0x8  TestOutput.o [6]
+  .rodata                const         0xda6c       0x8  TestOutput.o [6]
+  .rodata                const         0xda74       0x8  TestOutput.o [6]
+  .rodata                const         0xda7c       0x8  TestOutput.o [6]
+  .rodata                const         0xda84       0x8  TestOutput.o [6]
+  .rodata                const         0xda8c       0x8  TestOutput.o [6]
+  .rodata                const         0xda94       0x8  TestOutput.o [6]
+  .rodata                const         0xda9c       0x8  TestPlugin.o [6]
+  .rodata                const         0xdaa4       0x8  Utest.o [6]
+  .rodata                const         0xdaac       0x8  xlocale_c.o [8]
+  .rodata                const         0xdab4       0x4  led_driver_test.o [4]
+  .rodata                const         0xdab8       0x4  led_driver_test.o [4]
+  .rodata                const         0xdabc       0x4  led_driver_test.o [4]
+  .rodata                const         0xdac0       0x4  led_driver_test.o [4]
+  .rodata                const         0xdac4       0x4  led_driver_test.o [4]
+  .rodata                const         0xdac8       0x4  led_driver_test.o [4]
+  .rodata                const         0xdacc       0x4  led_driver_test.o [4]
+  .rodata                const         0xdad0       0x4  led_driver_test.o [4]
+  .rodata                const         0xdad4       0x4  led_driver_test.o [4]
+  .rodata                const         0xdad8       0x4  led_driver_test.o [4]
+  .rodata                const         0xdadc       0x4  main.o [1]
+  .rodata                const         0xdae0       0x4  main.o [1]
+  .rodata                const         0xdae4       0x4  MemoryLeakWarningPlugin.o [6]
+  .rodata                const         0xdae8       0x4  queue_test.o [4]
+  .rodata                const         0xdaec       0x4  queue_test.o [4]
+  .rodata                const         0xdaf0       0x4  queue_test.o [4]
+  .rodata                const         0xdaf4       0x4  queue_test.o [4]
+  .rodata                const         0xdaf8       0x4  queue_test.o [4]
+  .rodata                const         0xdafc       0x4  queue_test.o [4]
+  .rodata                const         0xdb00       0x4  queue_test.o [4]
+  .rodata                const         0xdb04       0x4  queue_test.o [4]
+  .rodata                const         0xdb08       0x4  queue_test.o [4]
+  .rodata                const         0xdb0c       0x4  queue_test.o [4]
+  .rodata                const         0xdb10       0x4  queue_test.o [4]
+  .rodata                const         0xdb14       0x4  queue_test.o [4]
+  .rodata                const         0xdb18       0x4  queue_test.o [4]
+  .rodata                const         0xdb1c       0x4  queue_test.o [4]
+  .rodata                const         0xdb20       0x4  queue_test.o [4]
+  .rodata                const         0xdb24       0x4  queue_test.o [4]
+  .rodata                const         0xdb28       0x4  queue_test.o [4]
+  .rodata                const         0xdb2c       0x4  queue_test.o [4]
+  .rodata                const         0xdb30       0x4  queue_test.o [4]
+  .rodata                const         0xdb34       0x4  queue_test.o [4]
+  .rodata                const         0xdb38       0x4  queue_test.o [4]
+  .rodata                const         0xdb3c       0x4  queue_test.o [4]
+  .rodata                const         0xdb40       0x4  queue_test.o [4]
+  .rodata                const         0xdb44       0x4  queue_test.o [4]
+  .rodata                const         0xdb48       0x4  TestMemoryAllocator.o [6]
+  .rodata                const         0xdb4c       0x4  Utest.o [6]
+  .rodata                const         0xdb50       0x4  asctime.o [8]
+  .rodata                const         0xdb54       0x4  xgentime.o [8]
+  .rodata                const         0xdb58       0x4  iarttio.o [12]
+  .text                  ro code       0xdb5c       0x4  IEEE754ExceptionsPlugin.o [5]
+  .text                  ro code       0xdb60       0x4  Utest.o [6]
+  .text                  ro code       0xdb64       0x4  vectortrap.o [11]
+  .text                  ro code       0xdb68       0x4  xreturnswi.o [12]
+  .text                  ro code       0xdb6c       0x0  cstart_call_dtors.o [11]
+  .rodata                const         0xdb6c       0x0  zero_init3.o [11]
+  .rodata                const         0xdb6c       0x0  lz77_init_single.o [11]
+  Initializer bytes      const         0xdb6c      0x6a  <for P2-1>
+                                     - 0xdbd6    0xdb9a
+
+"P2", part 1 of 3:                                 0x7d
+  P2-1                            0x2000'0000      0x7d  <Init block>
+    .data                inited   0x2000'0000       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'0004       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'0008       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'000c       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'0010       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'0014       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'0018       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'001c       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'0020       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'0024       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'0028       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'002c       0x4  MemoryLeakWarningPlugin.o [6]
+    .data                inited   0x2000'0030       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0034       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0038       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'003c       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0040       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0044       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0048       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'004c       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0050       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0054       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0058       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'005c       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0060       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0064       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0068       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'006c       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0070       0x4  UtestPlatform.o [7]
+    .data                inited   0x2000'0074       0x8  XShttio.o [8]
+    .data                inited   0x2000'007c       0x1  TestOutput.o [6]
+                                - 0x2000'007d      0x7d
+
+"P2", part 2 of 3:                                0xae0
+  .bss                   zero     0x2000'0080     0x500  UtestPlatform.o [7]
+  .bss                   zero     0x2000'0580     0x1d8  dlmalloc.o [8]
+  .bss                   zero     0x2000'0758     0x100  TestPlugin.o [6]
+  .bss                   zero     0x2000'0858      0x64  Utest.o [6]
+  .bss                   zero     0x2000'08bc      0x54  MockSupport.o [5]
+  .bss                   zero     0x2000'0910      0x2c  xttotm64.o [8]
+  .bss                   zero     0x2000'093c      0x20  TestRegistry.o [6]
+  .bss                   zero     0x2000'095c      0x1c  led_driver_test.o [4]
+  .bss                   zero     0x2000'0978      0x1c  led_driver_test.o [4]
+  .bss                   zero     0x2000'0994      0x1c  led_driver_test.o [4]
+  .bss                   zero     0x2000'09b0      0x1c  queue_test.o [4]
+  .bss                   zero     0x2000'09cc      0x1c  queue_test.o [4]
+  .bss                   zero     0x2000'09e8      0x1c  queue_test.o [4]
+  .bss                   zero     0x2000'0a04      0x1c  queue_test.o [4]
+  .bss                   zero     0x2000'0a20      0x1c  queue_test.o [4]
+  .bss                   zero     0x2000'0a3c      0x1c  queue_test.o [4]
+  .bss                   zero     0x2000'0a58      0x1c  asctime.o [8]
+  .bss                   zero     0x2000'0a74      0x18  dlmalloc.o [8]
+  .bss                   zero     0x2000'0a8c      0x14  TestMemoryAllocator.o [6]
+  .bss                   zero     0x2000'0aa0      0x14  TestMemoryAllocator.o [6]
+  .bss                   zero     0x2000'0ab4      0x14  TestMemoryAllocator.o [6]
+  .bss                   zero     0x2000'0ac8      0x14  TestMemoryAllocator.o [6]
+  .bss                   zero     0x2000'0adc      0x10  TestPlugin.o [6]
+  .bss                   zero     0x2000'0aec       0x8  MockSupport_c.o [5]
+  .bss                   zero     0x2000'0af4       0x4  led_driver_test.o [4]
+  .bss                   zero     0x2000'0af8       0x4  led_driver_test.o [4]
+  .bss                   zero     0x2000'0afc       0x4  led_driver_test.o [4]
+  .bss                   zero     0x2000'0b00       0x4  MemoryLeakWarningPlugin.o [6]
+  .bss                   zero     0x2000'0b04       0x4  MemoryLeakWarningPlugin.o [6]
+  .bss                   zero     0x2000'0b08       0x4  MemoryLeakWarningPlugin.o [6]
+  .bss                   zero     0x2000'0b0c       0x4  queue_test.o [4]
+  .bss                   zero     0x2000'0b10       0x4  queue_test.o [4]
+  .bss                   zero     0x2000'0b14       0x4  queue_test.o [4]
+  .bss                   zero     0x2000'0b18       0x4  queue_test.o [4]
+  .bss                   zero     0x2000'0b1c       0x4  queue_test.o [4]
+  .bss                   zero     0x2000'0b20       0x4  queue_test.o [4]
+  .bss                   zero     0x2000'0b24       0x4  SimpleString.o [6]
+  .bss                   zero     0x2000'0b28       0x4  TestMemoryAllocator.o [6]
+  .bss                   zero     0x2000'0b2c       0x4  TestMemoryAllocator.o [6]
+  .bss                   zero     0x2000'0b30       0x4  TestMemoryAllocator.o [6]
+  .bss                   zero     0x2000'0b34       0x4  TestPlugin.o [6]
+  .bss                   zero     0x2000'0b38       0x4  TestRegistry.o [6]
+  .bss                   zero     0x2000'0b3c       0x4  Utest.o [6]
+  .bss                   zero     0x2000'0b40       0x4  Utest.o [6]
+  .bss                   zero     0x2000'0b44       0x4  UtestPlatform.o [7]
+  .bss                   zero     0x2000'0b48       0x4  cppinit.o [8]
+  .bss                   zero     0x2000'0b4c       0x4  cppinit.o [8]
+  .bss                   zero     0x2000'0b50       0x4  xgetmemchunk.o [8]
+  .bss                   zero     0x2000'0b54       0x4  xfail_s.o [8]
+  .bss                   zero     0x2000'0b58       0x1  TestMemoryAllocator.o [6]
+  .bss                   zero     0x2000'0b59       0x1  TestMemoryAllocator.o [6]
+  .bss                   zero     0x2000'0b5a       0x1  TestMemoryAllocator.o [6]
+  .bss                   zero     0x2000'0b5b       0x1  TestMemoryAllocator.o [6]
+  .bss                   zero     0x2000'0b5c       0x1  TestPlugin.o [6]
+  .bss                   zero     0x2000'0b5d       0x1  TestRegistry.o [6]
+  .bss                   zero     0x2000'0b5e       0x1  Utest.o [6]
+                                - 0x2000'0b5f     0xadf
+
+"P2", part 3 of 3:                             0x1'01b0
+  .iar.dynexit                    0x2000'0b60     0x2ac  <Block>
+    .iar.dynexit         uninit   0x2000'0b60       0xc  cppinit.o [8]
+    .iar.dynexit         uninit   0x2000'0b6c     0x2a0  <Block tail>
+  CSTACK                          0x2000'0e10     0xf00  <Block>
+    CSTACK               uninit   0x2000'0e10     0xf00  <Block tail>
+  HEAP                            0x2000'1d10    0xf000  <Block>
+    HEAP                 uninit   0x2000'1d10    0xf000  <Block tail>
+                                - 0x2001'0d10  0x1'01b0
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+       0xdbd6     0x7'ffff  0x7'242a
+  0x2000'007d  0x2000'007f       0x3
+  0x2001'0d10  0x200f'ffff  0xe'f2f0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xadf:
+          0x2000'0080  0xadf
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x6a (84% of destination):
+               0xdb6c   0x6a
+    1 destination range, total size 0x7d:
+          0x2000'0000   0x7d
+
+Extra (__iar_cstart_call_ctors)
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                     ro code  ro data  rw data
+    ------                     -------  -------  -------
+command line/config:
+    ----------------------------------------------------
+    Total:
+
+C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj: [1]
+    main.o                          28       16
+    ----------------------------------------------------
+    Total:                          28       16
+
+C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\Work_Space\Project\led_driver: [2]
+    led_driver.o                    62
+    ----------------------------------------------------
+    Total:                          62
+
+C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\Work_Space\Project\queue: [3]
+    queue.o                        570
+    ----------------------------------------------------
+    Total:                         570
+
+C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\Work_Space\Testers: [4]
+    led_driver_test.o            1'962    1'220       96
+    queue_test.o                 3'578    2'136      192
+    ----------------------------------------------------
+    Total:                       5'540    3'356      288
+
+C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src: [5]
+    IEEE754ExceptionsPlugin.o        4
+    MockExpectedCall.o              20      136
+    MockExpectedCallsList.o         48      160
+    MockFailure.o                            28
+    MockNamedValue.o                90       36
+    MockSupport.o                  264      196       84
+    MockSupport_c.o                 48       32        8
+    ----------------------------------------------------
+    Total:                         474      588       92
+
+C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src: [6]
+    CommandLineArguments.o       3'026      364
+    CommandLineTestRunner.o      1'016      164
+    JUnitTestOutput.o            1'732      680
+    MemoryLeakDetector.o         2'882      900
+    MemoryLeakWarningPlugin.o    1'428      136       60
+    SimpleMutex.o                   40
+    SimpleString.o               1'992       96        4
+    TeamCityTestOutput.o           936      348
+    TestFailure.o                1'584      288
+    TestFilter.o                   116
+    TestMemoryAllocator.o          654      384       96
+    TestOutput.o                 2'150      361        1
+    TestPlugin.o                   482      212      277
+    TestRegistry.o               1'064       96       37
+    TestResult.o                   312       68
+    Utest.o                      1'646      716      109
+    ----------------------------------------------------
+    Total:                      21'060    4'813      584
+
+C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\platforms: [7]
+    UtestPlatform.o                200      118    1'352
+    ----------------------------------------------------
+    Total:                         200      118    1'352
+
+dl7Sx_tln.a: [8]
+    XShttio.o                       10        7        8
+    abort.o                          6
+    asctime.o                       46        4       28
+    cppinit.o                      174                20
+    ctime64.o                       14
+    dlmalloc.o                   7'492               496
+    exit.o                           4
+    getzone_nop.o                    4
+    heaptramp0.o                     8
+    iar_Stolx.o                    148
+    iar_Stoulx.o                   328       80
+    localtim64.o                    32
+    low_level_init.o                 4
+    putchar.o                       32
+    time_trampoline.o                4
+    vsnprint.o                      64
+    xDaysTo64.o                    278       48
+    xTzoff_nop.o                     4
+    xfail_s.o                       46       32        4
+    xgentime.o                   2'220      228
+    xgetmemchunk.o                  48                 4
+    xgettime.o                      64
+    xisdst_nop64.o                   6
+    xlocale_c.o                     10      358
+    xprintffull_nomb.o           3'970      104
+    xsnprout.o                      26
+    xstrftim.o                     224
+    xttotm64.o                     412                44
+    ----------------------------------------------------
+    Total:                      15'678      861      604
+
+dlpprt7Sx_tl_nc.a: [9]
+    cxxabi.o                        50
+    ----------------------------------------------------
+    Total:                          50
+
+m7Sx_tlv.a: [10]
+    DblCmpGe.o                      52
+    DblCmpLe.o                      52
+    DblDiv.o                        18
+    DblMul.o                        18
+    DblSub.o                        18
+    DblToS32.o                      14
+    DblToU32.o                      14
+    S32ToDbl.o                      14
+    U32ToDbl.o                      14
+    fpinit.o                        40
+    frexp.o                        112
+    ldexp.o                        260
+    setjmp.o                        40
+    ----------------------------------------------------
+    Total:                         666
+
+rt7Sx_tl.a: [11]
+    ABImemcpy_unaligned.o          148
+    ABImemset.o                    116
+    I32DivMod.o                    424
+    I64DivMod.o                    388
+    I64DivZer.o                      4
+    IntDivZer.o                      4
+    cexit.o                         20
+    cmain.o                         48
+    cmain_call_ctors.o              40
+    cstart_call_dtors.o
+    cstartup.o                     148
+    data_init.o                     48
+    lz77_init_single.o             120
+    memchr.o                       148
+    memset.o                        20
+    strchr.o                        32
+    strlen.o                        84
+    vectortrap.o                     4
+    zero_init3.o                    56
+    ----------------------------------------------------
+    Total:                       1'852
+
+sh7Sxs_l.a: [12]
+    clock.o                         10
+    dwrite.o                        20
+    exit.o                          20
+    iarttio.o                      134        4
+    iarwrite.o                      34
+    iarwstd.o                       32
+    time64.o                        20
+    unwind_debug.o                            1
+    write.o                         12
+    xreturnswi.o                     4
+    ----------------------------------------------------
+    Total:                         286        5
+
+    Gaps                             5        6
+    Linker created                   8       36   65'952
+--------------------------------------------------------
+    Grand Total:                46'479    9'799   68'872
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.dynexit$$Base      0x2000'0b60          --   Gb  - Linker created -
+.iar.dynexit$$Limit     0x2000'0e0c          --   Gb  - Linker created -
+.iar.init_table$$Base        0xcd98          --   Gb  - Linker created -
+.iar.init_table$$Limit       0xcdbc          --   Gb  - Linker created -
+?main                        0xc04c         Code  Gb  cmain.o [11]
+Abort_Handler                0xdb64         Code  Wk  vectortrap.o [11]
+CSTACK$$Base            0x2000'0e10          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'1d10          --   Gb  - Linker created -
+CheckEqualFailure::CheckEqualFailure(UtestShell *, char const *, int, SimpleString const &, SimpleString const &, SimpleString const &)
+                             0x61b5   0x94  Code  Gb  TestFailure.o [6]
+CheckEqualFailure::~CheckEqualFailure()
+                             0x6a79    0xe  Code  Wk  TestFailure.o [6]
+CheckEqualFailure::~CheckEqualFailure() [deleting]
+                             0xd685   0x14  Code  Wk  TestFailure.o [6]
+CommandLineArguments::AddExcludeGroupFilter(int, char const **, int &)
+                             0x3be9   0x66  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::AddExcludeNameFilter(int, char const **, int &)
+                             0x3d83   0x64  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::AddExcludeStrictGroupFilter(int, char const **, int &)
+                             0x3c4f   0x6e  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::AddExcludeStrictNameFilter(int, char const **, int &)
+                             0x3de7   0x6a  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::AddGroupFilter(int, char const **, int &)
+                             0x3b19   0x60  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::AddNameFilter(int, char const **, int &)
+                             0x3cbd   0x60  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::AddStrictGroupFilter(int, char const **, int &)
+                             0x3b7d   0x66  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::AddStrictNameFilter(int, char const **, int &)
+                             0x3d1d   0x66  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::AddTestToRunBasedOnVerboseOutput(int, char const **, int &, char const *)
+                             0x3e5d   0xdc  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::CommandLineArguments(int, char const **)
+                             0x355d   0x46  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::SetOutputType(int, char const **, int &)
+                             0x3f95  0x118  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::SetPackageName(int, char const **, int &)
+                             0x3f3d   0x50  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::SetRepeatCount(int, char const **, int &)
+                             0x3a39   0x66  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::getGroupFilters() const
+                             0x3a31    0x4  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::getNameFilters() const
+                             0x3a35    0x4  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::getPackageName() const
+                             0x4109    0x4  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::getParameterField(int, char const **, int &, SimpleString const &)
+                             0x3a9f   0x74  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::getRepeatCount() const
+                             0x3a2d    0x4  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::isColor() const
+                             0x3a19    0x4  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::isJUnitOutput() const
+                             0x40e5   0x12  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::isListingTestGroupAndCaseNames() const
+                             0x3a21    0x4  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::isListingTestGroupNames() const
+                             0x3a1d    0x4  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::isRunIgnored() const
+                             0x3a25    0x4  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::isTeamCityOutput() const
+                             0x40f7   0x12  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::isVerbose() const
+                             0x3a15    0x4  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::parse(TestPlugin *)
+                             0x3601  0x3e2  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::runTestsInSeperateProcess() const
+                             0x3a29    0x4  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::usage() const
+                             0x39e9    0x6  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::~CommandLineArguments()
+                             0x35a3   0x5a  Code  Gb  CommandLineArguments.o [6]
+CommandLineArguments::~CommandLineArguments() [deleting]
+                             0x3549   0x14  Code  Gb  CommandLineArguments.o [6]
+CommandLineTestRunner::CommandLineTestRunner(int, char const **, TestRegistry *)
+                             0xa3ab   0x36  Code  Gb  CommandLineTestRunner.o [6]
+CommandLineTestRunner::RunAllTests(int, char const **)
+                             0xa30d   0x9e  Code  Gb  CommandLineTestRunner.o [6]
+CommandLineTestRunner::createCompositeOutput(TestOutput *, TestOutput *)
+                             0xa5f5   0x36  Code  Gb  CommandLineTestRunner.o [6]
+CommandLineTestRunner::createConsoleOutput()
+                             0xa5db   0x1a  Code  Gb  CommandLineTestRunner.o [6]
+CommandLineTestRunner::createJUnitOutput(SimpleString const &)
+                             0xa5af   0x2c  Code  Gb  CommandLineTestRunner.o [6]
+CommandLineTestRunner::createTeamCityOutput()
+                             0xa595   0x1a  Code  Gb  CommandLineTestRunner.o [6]
+CommandLineTestRunner::initializeTestRun()
+                             0xa479   0x76  Code  Gb  CommandLineTestRunner.o [6]
+CommandLineTestRunner::parseArguments(TestPlugin *)
+                             0xa63d   0x90  Code  Gb  CommandLineTestRunner.o [6]
+CommandLineTestRunner::runAllTests()
+                             0xa4ef   0xa6  Code  Gb  CommandLineTestRunner.o [6]
+CommandLineTestRunner::runAllTestsMain()
+                             0xa409   0x70  Code  Gb  CommandLineTestRunner.o [6]
+CommandLineTestRunner::~CommandLineTestRunner()
+                             0xa3e1   0x28  Code  Gb  CommandLineTestRunner.o [6]
+CompositeTestOutput::CompositeTestOutput()
+                             0x75e5   0x1a  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::color()
+                             0x77ed   0x26  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::print(char const *)
+                             0x783f   0x2c  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::print(long)
+                             0x786b   0x2c  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::printBuffer(char const *)
+                             0x7813   0x2c  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::printCurrentGroupEnded(TestResult const &)
+                             0x779b   0x2c  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::printCurrentGroupStarted(UtestShell const &)
+                             0x776f   0x2c  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::printCurrentTestEnded(TestResult const &)
+                             0x7743   0x2c  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::printCurrentTestStarted(UtestShell const &)
+                             0x7717   0x2c  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::printFailure(TestFailure const &)
+                             0x7897   0x2c  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::printTestsEnded(TestResult const &)
+                             0x76eb   0x2c  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::printTestsStarted()
+                             0x76c5   0x26  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::setOutputOne(TestOutput *)
+                             0x7691   0x1a  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::setOutputTwo(TestOutput *)
+                             0x76ab   0x1a  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::setProgressIndicator(char const *)
+                             0x78c3   0x2c  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::verbose()
+                             0x77c7   0x26  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::~CompositeTestOutput()
+                             0x7669   0x28  Code  Gb  TestOutput.o [6]
+CompositeTestOutput::~CompositeTestOutput() [deleting]
+                             0x70c1   0x14  Code  Gb  TestOutput.o [6]
+ConsoleTestOutput::ConsoleTestOutput()
+                             0x6f61   0x18  Code  Wk  CommandLineTestRunner.o [6]
+ConsoleTestOutput::flush()
+                             0x75d5    0xa  Code  Gb  TestOutput.o [6]
+ConsoleTestOutput::printBuffer(char const *)
+                             0x75b3   0x22  Code  Gb  TestOutput.o [6]
+ConsoleTestOutput::~ConsoleTestOutput()
+                             0xa6cd    0xe  Code  Wk  CommandLineTestRunner.o [6]
+ConsoleTestOutput::~ConsoleTestOutput() [deleting]
+                             0xd6c1   0x14  Code  Wk  TestOutput.o [6]
+DtorRecArray            0x2000'0b60    0xc  Data  Lc  cppinit.o [8]
+FIQ_Handler                  0xdb64         Code  Wk  vectortrap.o [11]
+FIQ_STACK$$Limit                0x0          --   Gb  - Linker created -
+FailFailure::FailFailure(UtestShell *, char const *, int, SimpleString const &)
+                             0x6249   0x20  Code  Gb  TestFailure.o [6]
+FailFailure::~FailFailure()
+                             0x6a5d    0xe  Code  Wk  MemoryLeakWarningPlugin.o [6]
+FailFailure::~FailFailure() [deleting]
+                             0xd699   0x14  Code  Wk  TestFailure.o [6]
+GetPlatformSpecificTimeInMillis
+                        0x2000'003c    0x4  Data  Gb  UtestPlatform.o [7]
+GetPlatformSpecificTimeString
+                        0x2000'0040    0x4  Data  Gb  UtestPlatform.o [7]
+HEAP$$Base              0x2000'1d10          --   Gb  - Linker created -
+HEAP$$Limit             0x2001'0d10          --   Gb  - Linker created -
+HexStringFrom(long)          0x4cc1    0xc  Code  Gb  SimpleString.o [6]
+IRQ_Handler                  0xdb64         Code  Wk  vectortrap.o [11]
+IRQ_STACK$$Limit                0x0          --   Gb  - Linker created -
+ISOwkyr                      0x7f25  0x116  Code  Lc  xgentime.o [8]
+ISOyear                      0x803b   0x1a  Code  Lc  xgentime.o [8]
+JUnitTestOutput::JUnitTestOutput()
+                             0x9679   0x2e  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::closeFile()
+                             0x9c07    0xe  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::createFileName(SimpleString const &)
+                             0x9821   0x2e  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::openFileForWrite(SimpleString const &)
+                             0x9bd9   0x18  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::print(char const *)
+                             0x9b99    0x2  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::print(long)
+                             0x9b9b    0x2  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::printBuffer(char const *)
+                             0x9b97    0x2  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::printCurrentGroupEnded(TestResult const &)
+                             0x974f   0x1e  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::printCurrentGroupStarted(UtestShell const &)
+                             0x9739    0x2  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::printCurrentTestEnded(TestResult const &)
+                             0x973b   0x12  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::printCurrentTestStarted(UtestShell const &)
+                             0x976d   0xb4  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::printFailure(TestFailure const &)
+                             0x9b9d   0x3c  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::printTestsEnded(TestResult const &)
+                             0x974d    0x2  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::printTestsStarted()
+                             0x9737    0x2  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::resetTestGroupResult()
+                             0x96d3   0x64  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::setPackageName(SimpleString const &)
+                             0x984f   0x12  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::writeFailure(JUnitTestCaseResultNode *)
+                             0x9a19   0xda  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::writeFileEnding()
+                             0x9af3   0x4e  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::writeProperties()
+                             0x98f7   0x36  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::writeTestCases()
+                             0x992d   0xe6  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::writeTestGroupToFile()
+                             0x9b41   0x56  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::writeTestSuiteSummary()
+                             0x9881   0x76  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::writeToFile(SimpleString const &)
+                             0x9bf1   0x16  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::writeXmlHeader()
+                             0x9861   0x20  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::~JUnitTestOutput()
+                             0x96a7   0x2c  Code  Gb  JUnitTestOutput.o [6]
+JUnitTestOutput::~JUnitTestOutput() [deleting]
+                             0x9665   0x14  Code  Gb  JUnitTestOutput.o [6]
+LongsEqualFailure::LongsEqualFailure(UtestShell *, char const *, int, long, long, SimpleString const &)
+                             0x6271   0xfe  Code  Gb  TestFailure.o [6]
+LongsEqualFailure::~LongsEqualFailure()
+                             0x6a6b    0xe  Code  Wk  TestFailure.o [6]
+LongsEqualFailure::~LongsEqualFailure() [deleting]
+                             0xd6ad   0x14  Code  Wk  TestFailure.o [6]
+MemoryLeakDetector::ConstructMemoryLeakReport(MemLeakPeriod)
+                             0x5b5b   0x4a  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::MemoryLeakDetector(MemoryLeakFailure *)
+                             0x56c9   0x58  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::addMemoryCorruptionInformation(char *)
+                             0x585b    0xe  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::allocMemory(TestMemoryAllocator *, unsigned int, bool)
+                             0x5915   0x12  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::allocMemory(TestMemoryAllocator *, unsigned int, char const *, int, bool)
+                             0x59b3   0x62  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::allocateMemoryWithAccountingInformation(TestMemoryAllocator *, unsigned int, char const *, int, bool)
+                             0x5927   0x3c  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::checkForCorruption(MemoryLeakDetectorNode *, char const *, int, TestMemoryAllocator *, bool)
+                             0x58a7   0x6e  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::createMemoryLeakAccountingInformation(TestMemoryAllocator *, unsigned int, char *, bool)
+                             0x5993   0x20  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::deallocMemory(TestMemoryAllocator *, void *, bool)
+                             0x5a7f   0x12  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::deallocMemory(TestMemoryAllocator *, void *, char const *, int, bool)
+                             0x5a15   0x6a  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::enable()
+                             0x5765    0x6  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::getNodeFromMemoryPointer(char *, unsigned int)
+                             0x5783    0xe  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::invalidateMemory(char *)
+                             0x5839   0x22  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::markCheckingPeriodLeaksAsNonCheckingPeriod()
+                             0x5bbb   0x32  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::matchingAllocation(TestMemoryAllocator *, TestMemoryAllocator *)
+                             0x5885   0x22  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::reallocMemory(TestMemoryAllocator *, char *, unsigned int, char const *, int, bool)
+                             0x5ae9   0x72  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::reallocateMemoryAndLeakInformation(TestMemoryAllocator *, char *, unsigned int, char const *, int, bool)
+                             0x57d3   0x66  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::reallocateMemoryWithAccountingInformation(TestMemoryAllocator *, char *, unsigned int, char const *, int, bool)
+                             0x5963   0x30  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::report(MemLeakPeriod)
+                             0x5ba5   0x16  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::sizeOfMemoryWithCorruptionInfo(unsigned int)
+                             0x5777    0xc  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::startChecking()
+                             0x574d   0x12  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::stopChecking()
+                             0x575f    0x6  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::storeLeakInformation(MemoryLeakDetectorNode *, char *, unsigned int, TestMemoryAllocator *, char const *, int)
+                             0x5791   0x42  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::totalMemoryLeaks(MemLeakPeriod)
+                             0x5bed   0x10  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::validMemoryCorruptionInformation(char *)
+                             0x5869   0x1c  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::~MemoryLeakDetector()
+                             0x5729   0x24  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetector::~MemoryLeakDetector() [deleting]
+                             0x50d9   0x16  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorList::addNewNode(MemoryLeakDetectorNode *)
+                             0x5529    0x8  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorList::getFirstLeak(MemLeakPeriod)
+                             0x559d    0xe  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorList::getLeakFrom(MemoryLeakDetectorNode *, MemLeakPeriod)
+                             0x5575   0x28  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorList::getNextLeak(MemoryLeakDetectorNode *, MemLeakPeriod)
+                             0x55ab    0xc  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorList::getTotalLeaks(MemLeakPeriod)
+                             0x55b7   0x28  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorList::isInPeriod(MemoryLeakDetectorNode *, MemLeakPeriod)
+                             0x5501   0x28  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorList::removeNode(char *)
+                             0x5531   0x2e  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorList::retrieveNode(char *)
+                             0x555f   0x16  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorNode::init(char *, unsigned int, unsigned int, TestMemoryAllocator *, MemLeakPeriod, char const *, int)
+                             0x54e5   0x1c  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorTable::addNewNode(MemoryLeakDetectorNode *)
+                             0x55ed   0x1a  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorTable::getFirstLeak(MemLeakPeriod)
+                             0x565f   0x26  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorTable::getNextLeak(MemoryLeakDetectorNode *, MemLeakPeriod)
+                             0x5685   0x44  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorTable::getTotalLeaks(MemLeakPeriod)
+                             0x563b   0x24  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorTable::hash(char *)
+                             0x55df    0xe  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorTable::removeNode(char *)
+                             0x5607   0x1a  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakDetectorTable::retrieveNode(char *)
+                             0x5621   0x1a  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::MemoryLeakOutputStringBuffer()
+                             0x525f   0x18  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::addAllocationLocation(char const *, int, unsigned int, TestMemoryAllocator *)
+                             0x5277   0x28  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::addDeallocationLocation(char const *, int, TestMemoryAllocator *)
+                             0x529f   0x24  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::addErrorMessageForTooMuchLeaks()
+                             0x53ad    0xe  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::addMemoryLeakFooter(int)
+                             0x53bb   0x14  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::addMemoryLeakHeader()
+                             0x539f    0xe  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::addNoMemoryLeaksMessage()
+                             0x52c3    0xe  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::addWarningForUsingMalloc()
+                             0x53cf    0xe  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::clear()
+                             0x54db    0xa  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::reportAllocationDeallocationMismatchFailure(MemoryLeakDetectorNode *, char const *, int, TestMemoryAllocator *, MemoryLeakFailure *)
+                             0x5411   0x28  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::reportDeallocateNonAllocatedMemoryFailure(char const *, int, TestMemoryAllocator *, MemoryLeakFailure *)
+                             0x53dd   0x34  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::reportFailure(char const *, char const *, int, unsigned int, TestMemoryAllocator *, char const *, int, TestMemoryAllocator *, MemoryLeakFailure *)
+                             0x5469   0x5a  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::reportMemoryCorruptionFailure(MemoryLeakDetectorNode *, char const *, int, TestMemoryAllocator *, MemoryLeakFailure *)
+                             0x5439   0x28  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::reportMemoryLeak(MemoryLeakDetectorNode *)
+                             0x52ed   0x6c  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::startMemoryLeakReporting()
+                             0x52d1   0x1c  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::stopMemoryLeakReporting()
+                             0x5359   0x46  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakOutputStringBuffer::toString()
+                             0x54d1    0xa  Code  Gb  MemoryLeakDetector.o [6]
+MemoryLeakWarningPlugin::FinalReport(int)
+                             0x4543   0x20  Code  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningPlugin::MemoryLeakWarningPlugin(SimpleString const &, MemoryLeakDetector *)
+                             0x445b   0x3e  Code  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningPlugin::areNewDeleteOverloaded()
+                             0x43c1   0x14  Code  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningPlugin::destroyGlobalDetector()
+                             0x442b   0x30  Code  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningPlugin::destroyGlobalDetectorAndTurnOffMemoryLeakDetectionInDestructor(bool)
+                             0x4427    0x4  Code  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningPlugin::firstPlugin_
+                        0x2000'0b08    0x4  Data  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningPlugin::getGlobalDetector()
+                             0x43d5   0x52  Code  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningPlugin::postTestAction(UtestShell &, TestResult &)
+                             0x44cf   0x74  Code  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningPlugin::preTestAction(UtestShell &, TestResult &)
+                             0x44b9   0x16  Code  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningPlugin::turnOffNewDeleteOverloads()
+                             0x432d   0x50  Code  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningPlugin::turnOnNewDeleteOverloads()
+                             0x437d   0x44  Code  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningPlugin::~MemoryLeakWarningPlugin()
+                             0x4499   0x20  Code  Gb  MemoryLeakWarningPlugin.o [6]
+MemoryLeakWarningReporter::fail(char *)
+                             0xbb5d   0x70  Code  Wk  MemoryLeakWarningPlugin.o [6]
+MockExpectedCallComposite::MockExpectedCallComposite()
+                             0xacdd    0xc  Code  Gb  MockExpectedCall.o [5]
+MockExpectedCallComposite::~MockExpectedCallComposite()
+                             0xace9    0x2  Code  Gb  MockExpectedCall.o [5]
+MockExpectedCallsList::MockExpectedCallsList()
+                             0xacad    0xc  Code  Gb  MockExpectedCallsList.o [5]
+MockExpectedCallsList::~MockExpectedCallsList()
+                             0xacb9   0x1e  Code  Gb  MockExpectedCallsList.o [5]
+MockFailureReporter::MockFailureReporter()
+                             0xac9d   0x10  Code  Wk  MockSupport.o [5]
+MockNamedValueComparatorsAndCopiersRepository::MockNamedValueComparatorsAndCopiersRepository()
+                             0xacf7    0xa  Code  Gb  MockNamedValue.o [5]
+MockNamedValueComparatorsAndCopiersRepository::clear()
+                             0xad13   0x26  Code  Gb  MockNamedValue.o [5]
+MockNamedValueComparatorsAndCopiersRepository::~MockNamedValueComparatorsAndCopiersRepository()
+                             0xad01   0x12  Code  Gb  MockNamedValue.o [5]
+MockNamedValueList::MockNamedValueList()
+                             0xacf1    0x6  Code  Gb  MockNamedValue.o [5]
+MockSupport::MockSupport(SimpleString const &)
+                             0xabcd   0x7a  Code  Gb  MockSupport.o [5]
+MockSupport::setActiveReporter(MockFailureReporter *)
+                             0xac85    0xa  Code  Gb  MockSupport.o [5]
+MockSupport::~MockSupport()
+                             0xac49   0x36  Code  Gb  MockSupport.o [5]
+NormalTestTerminator::exitCurrentTest() const
+                             0x68f3   0x16  Code  Gb  Utest.o [6]
+NormalTestTerminator::~NormalTestTerminator()
+                             0x6911    0x2  Code  Gb  Utest.o [6]
+NullTestPlugin::NullTestPlugin()
+                             0x5d6b   0x14  Code  Gb  TestPlugin.o [6]
+NullTestPlugin::instance()
+                             0x5d7f   0x20  Code  Gb  TestPlugin.o [6]
+NullTestPlugin::instance()::_instance
+                        0x2000'0adc   0x10  Data  Lc  TestPlugin.o [6]
+NullTestPlugin::instance()::static guard for _instance
+                        0x2000'0b5c    0x1  Data  Lc  TestPlugin.o [6]
+NullTestPlugin::runAllPostTestAction(UtestShell &, TestResult &)
+                             0x5dcb    0x2  Code  Gb  TestPlugin.o [6]
+NullTestPlugin::runAllPreTestAction(UtestShell &, TestResult &)
+                             0x5dc9    0x2  Code  Gb  TestPlugin.o [6]
+NullUnknownAllocator::NullUnknownAllocator()
+                             0x5021   0x18  Code  Gb  TestMemoryAllocator.o [6]
+NullUnknownAllocator::alloc_memory(unsigned int, char const *, int)
+                             0x501b    0x4  Code  Gb  TestMemoryAllocator.o [6]
+NullUnknownAllocator::defaultAllocator()
+                             0x5039   0x20  Code  Gb  TestMemoryAllocator.o [6]
+NullUnknownAllocator::defaultAllocator()::allocator
+                        0x2000'0ac8   0x14  Data  Lc  TestMemoryAllocator.o [6]
+NullUnknownAllocator::defaultAllocator()::static guard for allocator
+                        0x2000'0b5b    0x1  Data  Lc  TestMemoryAllocator.o [6]
+NullUnknownAllocator::free_memory(char *, char const *, int)
+                             0x501f    0x2  Code  Gb  TestMemoryAllocator.o [6]
+OutsideTestRunnerUTest::instance()
+                             0x63e9   0x20  Code  Gb  Utest.o [6]
+OutsideTestRunnerUTest::instance()::instance_
+                        0x2000'0858   0x64  Data  Lc  Utest.o [6]
+OutsideTestRunnerUTest::instance()::static guard for instance_
+                        0x2000'0b5e    0x1  Data  Lc  Utest.o [6]
+PlatformSpecificFClose  0x2000'0050    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificFOpen   0x2000'0048    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificFPuts   0x2000'004c    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificFlush   0x2000'0058    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificFree    0x2000'0064    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificGetWorkingEnvironment()
+                             0x78f1    0x4  Code  Gb  UtestPlatform.o [7]
+PlatformSpecificLongJmp
+                        0x2000'0034    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificMalloc  0x2000'005c    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificMemset  0x2000'0068    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificMutexCreate
+                        0x2000'006c    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificMutexDestroy
+                        0x2000'0070    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificPutchar
+                        0x2000'0054    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificRealloc
+                        0x2000'0060    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificRunTestInASeperateProcess
+                        0x2000'0030    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificSetJmp  0x2000'0038    0x4  Data  Gb  UtestPlatform.o [7]
+PlatformSpecificVSNprintf
+                        0x2000'0044    0x4  Data  Gb  UtestPlatform.o [7]
+Prefetch_Handler             0xdb64         Code  Wk  vectortrap.o [11]
+Region$$Table$$Base          0xcd98          --   Gb  - Linker created -
+Region$$Table$$Limit         0xcdbc          --   Gb  - Linker created -
+SHT$$INIT_ARRAY$$Base        0xd838          --   Gb  - Linker created -
+SHT$$INIT_ARRAY$$Limit       0xd848          --   Gb  - Linker created -
+SHT$$PREINIT_ARRAY$$Base
+                             0xd838          --   Gb  - Linker created -
+SHT$$PREINIT_ARRAY$$Limit
+                             0xd838          --   Gb  - Linker created -
+SWI_Handler                  0xdb64         Code  Wk  vectortrap.o [11]
+SetPointerPlugin::SetPointerPlugin(SimpleString const &)
+                             0x5d31   0x18  Code  Gb  TestPlugin.o [6]
+SetPointerPlugin::postTestAction(UtestShell &, TestResult &)
+                             0x5d49   0x22  Code  Gb  TestPlugin.o [6]
+SimpleMutex::SimpleMutex()
+                             0x69ed   0x10  Code  Gb  SimpleMutex.o [6]
+SimpleMutex::~SimpleMutex()
+                             0x69fd   0x10  Code  Gb  SimpleMutex.o [6]
+SimpleString::AtoI(char const *)
+                             0x466b   0x50  Code  Gb  SimpleString.o [6]
+SimpleString::SimpleString(char const *)
+                             0x4777   0x20  Code  Gb  SimpleString.o [6]
+SimpleString::SimpleString(char const *, unsigned int)
+                             0x4797   0x4e  Code  Gb  SimpleString.o [6]
+SimpleString::SimpleString(const SimpleString&)
+                             0x47e5   0x14  Code  Gb  SimpleString.o [6]
+SimpleString::StrCmp(char const *, char const *)
+                             0x46bb   0x1c  Code  Gb  SimpleString.o [6]
+SimpleString::StrLen(char const *)
+                             0x46d7   0x14  Code  Gb  SimpleString.o [6]
+SimpleString::StrNCmp(char const *, char const *, unsigned int)
+                             0x46eb   0x2e  Code  Gb  SimpleString.o [6]
+SimpleString::StrNCpy(char *, char const *, unsigned int)
+                             0x4719   0x2a  Code  Gb  SimpleString.o [6]
+SimpleString::StrStr(char const *, char const *)
+                             0x4743   0x34  Code  Gb  SimpleString.o [6]
+SimpleString::allocStringBuffer(unsigned int, char const *, int)
+                             0x4623   0x1a  Code  Gb  SimpleString.o [6]
+SimpleString::asCharString() const
+                             0x49db    0x4  Code  Gb  SimpleString.o [6]
+SimpleString::at(unsigned int) const
+                             0x4b79    0x6  Code  Gb  SimpleString.o [6]
+SimpleString::contains(const SimpleString&) const
+                             0x481f   0x18  Code  Gb  SimpleString.o [6]
+SimpleString::copyToBuffer(char *, unsigned int) const
+                             0x4c47   0x36  Code  Gb  SimpleString.o [6]
+SimpleString::copyToNewBuffer(char const *, unsigned int)
+                             0x4c0b   0x3c  Code  Gb  SimpleString.o [6]
+SimpleString::count(const SimpleString&) const
+                             0x48b9   0x24  Code  Gb  SimpleString.o [6]
+SimpleString::deallocStringBuffer(char *, char const *, int)
+                             0x463d   0x1a  Code  Gb  SimpleString.o [6]
+SimpleString::endsWith(const SimpleString&) const
+                             0x4871   0x48  Code  Gb  SimpleString.o [6]
+SimpleString::find(char) const
+                             0x4b7f    0xe  Code  Gb  SimpleString.o [6]
+SimpleString::findFrom(unsigned int, char) const
+                             0x4b8d   0x2c  Code  Gb  SimpleString.o [6]
+SimpleString::getEmptyString() const
+                             0x4657   0x14  Code  Gb  SimpleString.o [6]
+SimpleString::getStringAllocator()
+                             0x460d   0x16  Code  Gb  SimpleString.o [6]
+SimpleString::isDigit(char)
+                             0x4c7d   0x12  Code  Gb  SimpleString.o [6]
+SimpleString::isEmpty() const
+                             0x49e9   0x14  Code  Gb  SimpleString.o [6]
+SimpleString::isSpace(char)
+                             0x4c8f   0x1a  Code  Gb  SimpleString.o [6]
+SimpleString::operator +(const SimpleString&) const
+                             0x4a4d   0x18  Code  Gb  SimpleString.o [6]
+SimpleString::operator +=(char const *)
+                             0x4a6f   0x48  Code  Gb  SimpleString.o [6]
+SimpleString::operator +=(const SimpleString&)
+                             0x4a65    0xa  Code  Gb  SimpleString.o [6]
+SimpleString::operator =(const SimpleString&)
+                             0x47f9   0x24  Code  Gb  SimpleString.o [6]
+SimpleString::padStringsToSameLength(SimpleString&, SimpleString&, char)
+                             0x4ab7   0x6c  Code  Gb  SimpleString.o [6]
+SimpleString::replace(char const *, char const *)
+                             0x4907   0xd4  Code  Gb  SimpleString.o [6]
+SimpleString::replace(char, char)
+                             0x48dd   0x2a  Code  Gb  SimpleString.o [6]
+SimpleString::size() const
+                             0x49df    0xa  Code  Gb  SimpleString.o [6]
+SimpleString::startsWith(const SimpleString&) const
+                             0x4837   0x3a  Code  Gb  SimpleString.o [6]
+SimpleString::stringAllocator_
+                        0x2000'0b24    0x4  Data  Gb  SimpleString.o [6]
+SimpleString::subString(unsigned int) const
+                             0x4b6d    0xc  Code  Gb  SimpleString.o [6]
+SimpleString::subString(unsigned int, unsigned int) const
+                             0x4b23   0x4a  Code  Gb  SimpleString.o [6]
+SimpleString::subStringFromTill(char, char) const
+                             0x4bb9   0x52  Code  Gb  SimpleString.o [6]
+SimpleString::~SimpleString()
+                             0x49fd   0x16  Code  Gb  SimpleString.o [6]
+SimpleStringBuffer::SimpleStringBuffer()
+                             0x50ef   0x18  Code  Gb  MemoryLeakDetector.o [6]
+SimpleStringBuffer::add(char const *, ...)
+                             0x5115   0x48  Code  Gb  MemoryLeakDetector.o [6]
+SimpleStringBuffer::addMemoryDump(void const *, unsigned int)
+                             0x515d   0xc4  Code  Gb  MemoryLeakDetector.o [6]
+SimpleStringBuffer::clear()
+                             0x5107    0xe  Code  Gb  MemoryLeakDetector.o [6]
+SimpleStringBuffer::reachedItsCapacity()
+                             0x5245   0x1a  Code  Gb  MemoryLeakDetector.o [6]
+SimpleStringBuffer::resetWriteLimit()
+                             0x5239    0xc  Code  Gb  MemoryLeakDetector.o [6]
+SimpleStringBuffer::setWriteLimit(unsigned int)
+                             0x5223   0x16  Code  Gb  MemoryLeakDetector.o [6]
+SimpleStringBuffer::toString()
+                             0x5221    0x2  Code  Gb  MemoryLeakDetector.o [6]
+StringFrom(char)             0x4cd1    0xe  Code  Gb  SimpleString.o [6]
+StringFrom(int)              0x4ca9    0xc  Code  Gb  SimpleString.o [6]
+StringFrom(long)             0x4cb5    0xc  Code  Gb  SimpleString.o [6]
+StringFrom(unsigned int)
+                             0x4d0d    0xe  Code  Gb  SimpleString.o [6]
+StringFromFormat(char const *, ...)
+                             0x4cdf   0x2e  Code  Gb  SimpleString.o [6]
+TEST_GROUP_CppUTestGroupled_driver_test_group::setup()
+                             0xca51   0x2e  Code  Wk  led_driver_test.o [4]
+TEST_GROUP_CppUTestGroupled_driver_test_group::teardown()
+                             0xca7f   0x2e  Code  Wk  led_driver_test.o [4]
+TEST_GROUP_CppUTestGroupled_driver_test_group::~TEST_GROUP_CppUTestGroupled_driver_test_group() [deleting]
+                             0xd4e9   0x14  Code  Wk  led_driver_test.o [4]
+TEST_GROUP_CppUTestGroupqueue_group::setup()
+                             0x2edf    0x2  Code  Wk  queue_test.o [4]
+TEST_GROUP_CppUTestGroupqueue_group::teardown()
+                             0x3213    0x2  Code  Wk  queue_test.o [4]
+TEST_GROUP_CppUTestGroupqueue_group::~TEST_GROUP_CppUTestGroupqueue_group() [deleting]
+                             0xd58f   0x14  Code  Wk  queue_test.o [4]
+TEST_led_driver_test_group_led_create_test_1_Installer
+                        0x2000'0af4    0x4  Data  Lc  led_driver_test.o [4]
+TEST_led_driver_test_group_led_create_test_1_Test::testBody()
+                             0x9dd7  0x19a  Code  Gb  led_driver_test.o [4]
+TEST_led_driver_test_group_led_create_test_1_Test::~TEST_led_driver_test_group_led_create_test_1_Test() [deleting]
+                             0xd50b   0x14  Code  Wk  led_driver_test.o [4]
+TEST_led_driver_test_group_led_create_test_1_TestShell::createTest()
+                             0xd05d   0x20  Code  Wk  led_driver_test.o [4]
+TEST_led_driver_test_group_led_create_test_1_TestShell_instance
+                        0x2000'095c   0x1c  Data  Gb  led_driver_test.o [4]
+TEST_led_driver_test_group_led_create_test_2_Installer
+                        0x2000'0af8    0x4  Data  Lc  led_driver_test.o [4]
+TEST_led_driver_test_group_led_create_test_2_Test::testBody()
+                             0x9f71  0x1da  Code  Gb  led_driver_test.o [4]
+TEST_led_driver_test_group_led_create_test_2_Test::~TEST_led_driver_test_group_led_create_test_2_Test() [deleting]
+                             0xd535   0x14  Code  Wk  led_driver_test.o [4]
+TEST_led_driver_test_group_led_create_test_2_TestShell::createTest()
+                             0xd07d   0x20  Code  Wk  led_driver_test.o [4]
+TEST_led_driver_test_group_led_create_test_2_TestShell_instance
+                        0x2000'0978   0x1c  Data  Gb  led_driver_test.o [4]
+TEST_led_driver_test_group_led_set_order_test_1_Installer
+                        0x2000'0afc    0x4  Data  Lc  led_driver_test.o [4]
+TEST_led_driver_test_group_led_set_order_test_1_Test::testBody()
+                             0xa14b   0xcc  Code  Gb  led_driver_test.o [4]
+TEST_led_driver_test_group_led_set_order_test_1_Test::~TEST_led_driver_test_group_led_set_order_test_1_Test() [deleting]
+                             0xd557   0x14  Code  Wk  led_driver_test.o [4]
+TEST_led_driver_test_group_led_set_order_test_1_TestShell::createTest()
+                             0xd09d   0x20  Code  Wk  led_driver_test.o [4]
+TEST_led_driver_test_group_led_set_order_test_1_TestShell_instance
+                        0x2000'0994   0x1c  Data  Gb  led_driver_test.o [4]
+TEST_queue_group_queue_clear_test_Installer
+                        0x2000'0b1c    0x4  Data  Lc  queue_test.o [4]
+TEST_queue_group_queue_clear_test_Test::testBody()
+                             0x938d    0x2  Code  Gb  queue_test.o [4]
+TEST_queue_group_queue_clear_test_Test::~TEST_queue_group_queue_clear_test_Test() [deleting]
+                             0xd641   0x14  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_clear_test_TestShell::createTest()
+                             0xd1bd   0x20  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_clear_test_TestShell_instance
+                        0x2000'0a20   0x1c  Data  Gb  queue_test.o [4]
+TEST_queue_group_queue_create_test_Installer
+                        0x2000'0b0c    0x4  Data  Lc  queue_test.o [4]
+TEST_queue_group_queue_create_test_Test::testBody()
+                             0x8a29  0x1ca  Code  Gb  queue_test.o [4]
+TEST_queue_group_queue_create_test_Test::~TEST_queue_group_queue_create_test_Test() [deleting]
+                             0xd5b1   0x14  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_create_test_TestShell::createTest()
+                             0xd0bd   0x20  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_create_test_TestShell_instance
+                        0x2000'09b0   0x1c  Data  Gb  queue_test.o [4]
+TEST_queue_group_queue_is_empty_test_Installer
+                        0x2000'0b20    0x4  Data  Lc  queue_test.o [4]
+TEST_queue_group_queue_is_empty_test_Test::testBody()
+                             0x938f    0x2  Code  Gb  queue_test.o [4]
+TEST_queue_group_queue_is_empty_test_Test::~TEST_queue_group_queue_is_empty_test_Test() [deleting]
+                             0xd663   0x14  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_is_empty_test_TestShell::createTest()
+                             0xd1f5   0x20  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_is_empty_test_TestShell_instance
+                        0x2000'0a3c   0x1c  Data  Gb  queue_test.o [4]
+TEST_queue_group_queue_memory_leak_test_Installer
+                        0x2000'0b10    0x4  Data  Lc  queue_test.o [4]
+TEST_queue_group_queue_memory_leak_test_Test::testBody()
+                             0x8bf3  0x6ba  Code  Gb  queue_test.o [4]
+TEST_queue_group_queue_memory_leak_test_Test::~TEST_queue_group_queue_memory_leak_test_Test() [deleting]
+                             0xd5db   0x14  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_memory_leak_test_TestShell::createTest()
+                             0xd115   0x20  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_memory_leak_test_TestShell_instance
+                        0x2000'09cc   0x1c  Data  Gb  queue_test.o [4]
+TEST_queue_group_queue_read_test_Installer
+                        0x2000'0b18    0x4  Data  Lc  queue_test.o [4]
+TEST_queue_group_queue_read_test_Test::testBody()
+                             0x938b    0x2  Code  Gb  queue_test.o [4]
+TEST_queue_group_queue_read_test_Test::~TEST_queue_group_queue_read_test_Test() [deleting]
+                             0xd61f   0x14  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_read_test_TestShell::createTest()
+                             0xd185   0x20  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_read_test_TestShell_instance
+                        0x2000'0a04   0x1c  Data  Gb  queue_test.o [4]
+TEST_queue_group_queue_write_test_Installer
+                        0x2000'0b14    0x4  Data  Lc  queue_test.o [4]
+TEST_queue_group_queue_write_test_Test::testBody()
+                             0x9389    0x2  Code  Gb  queue_test.o [4]
+TEST_queue_group_queue_write_test_Test::~TEST_queue_group_queue_write_test_Test() [deleting]
+                             0xd5fd   0x14  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_write_test_TestShell::createTest()
+                             0xd14d   0x20  Code  Wk  queue_test.o [4]
+TEST_queue_group_queue_write_test_TestShell_instance
+                        0x2000'09e8   0x1c  Data  Gb  queue_test.o [4]
+TeamCityTestOutput::TeamCityTestOutput()
+                             0xa6fd   0x20  Code  Gb  TeamCityTestOutput.o [6]
+TeamCityTestOutput::printCurrentGroupEnded(TestResult const &)
+                             0xa859   0x50  Code  Gb  TeamCityTestOutput.o [6]
+TeamCityTestOutput::printCurrentGroupStarted(UtestShell const &)
+                             0xa815   0x44  Code  Gb  TeamCityTestOutput.o [6]
+TeamCityTestOutput::printCurrentTestEnded(TestResult const &)
+                             0xa7b7   0x5e  Code  Gb  TeamCityTestOutput.o [6]
+TeamCityTestOutput::printCurrentTestStarted(UtestShell const &)
+                             0xa737   0x80  Code  Gb  TeamCityTestOutput.o [6]
+TeamCityTestOutput::printEscaped(char const *)
+                             0xa8a9   0x82  Code  Gb  TeamCityTestOutput.o [6]
+TeamCityTestOutput::printFailure(TestFailure const &)
+                             0xa92b  0x118  Code  Gb  TeamCityTestOutput.o [6]
+TeamCityTestOutput::~TeamCityTestOutput()
+                             0xa71d   0x1a  Code  Gb  TeamCityTestOutput.o [6]
+TeamCityTestOutput::~TeamCityTestOutput() [deleting]
+                             0xa6e9   0x14  Code  Gb  TeamCityTestOutput.o [6]
+TestFailure::TestFailure(UtestShell *, SimpleString const &)
+                             0x5e91   0x54  Code  Gb  TestFailure.o [6]
+TestFailure::TestFailure(UtestShell *, char const *, int)
+                             0x5ee5   0x52  Code  Gb  TestFailure.o [6]
+TestFailure::TestFailure(UtestShell *, char const *, int) [subobject]
+                             0x5dd1    0x8  Code  Gb  TestFailure.o [6]
+TestFailure::TestFailure(const TestFailure&)
+                             0x5f37   0x50  Code  Gb  TestFailure.o [6]
+TestFailure::createButWasString(SimpleString const &, SimpleString const &)
+                             0x6015   0x24  Code  Gb  TestFailure.o [6]
+TestFailure::createDifferenceAtPosString(SimpleString const &, unsigned int, TestFailure::DifferenceFormat)
+                             0x6039  0x13c  Code  Gb  TestFailure.o [6]
+TestFailure::createUserText(SimpleString const &)
+                             0x6175   0x34  Code  Gb  TestFailure.o [6]
+TestFailure::getFailureLineNumber() const
+                             0x5fe3    0x4  Code  Gb  TestFailure.o [6]
+TestFailure::getFileName() const
+                             0x5fbb    0xa  Code  Gb  TestFailure.o [6]
+TestFailure::getMessage() const
+                             0x5feb    0xa  Code  Gb  TestFailure.o [6]
+TestFailure::getTestFileName() const
+                             0x5fc5    0xa  Code  Gb  TestFailure.o [6]
+TestFailure::getTestLineNumber() const
+                             0x5fe7    0x4  Code  Gb  TestFailure.o [6]
+TestFailure::getTestName() const
+                             0x5fcf    0xa  Code  Gb  TestFailure.o [6]
+TestFailure::getTestNameOnly() const
+                             0x5fd9    0xa  Code  Gb  TestFailure.o [6]
+TestFailure::isInHelperFunction() const
+                             0x6003   0x12  Code  Gb  TestFailure.o [6]
+TestFailure::isOutsideTestFile() const
+                             0x5ff5    0xe  Code  Gb  TestFailure.o [6]
+TestFailure::~TestFailure()
+                             0x5f87   0x34  Code  Gb  TestFailure.o [6]
+TestFailure::~TestFailure() [deleting]
+                             0x5dd9   0x14  Code  Gb  TestFailure.o [6]
+TestFailure::~TestFailure() [subobject]
+                             0x5ded    0x8  Code  Gb  TestFailure.o [6]
+TestFilter::TestFilter(SimpleString const &)
+                             0x4dd5   0x26  Code  Gb  TestFilter.o [6]
+TestFilter::add(TestFilter*)
+                             0x4dfb    0x4  Code  Gb  TestFilter.o [6]
+TestFilter::getNext() const
+                             0x4dff    0x4  Code  Gb  TestFilter.o [6]
+TestFilter::invertMatching()
+                             0x4e09    0x6  Code  Gb  TestFilter.o [6]
+TestFilter::match(SimpleString const &) const
+                             0x4e0f   0x34  Code  Gb  TestFilter.o [6]
+TestFilter::strictMatching()
+                             0x4e03    0x6  Code  Gb  TestFilter.o [6]
+TestInstaller::TestInstaller(UtestShell &, char const *, char const *, char const *, int)
+                             0x6929   0x46  Code  Gb  Utest.o [6]
+TestInstaller::~TestInstaller()
+                             0x69a1    0x2  Code  Gb  Utest.o [6]
+TestMemoryAllocator::TestMemoryAllocator(char const *, char const *, char const *)
+                             0x4f93   0x14  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::TestMemoryAllocator(char const *, char const *, char const *) [subobject]
+                             0x4e59    0x8  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::allocMemoryLeakNode(unsigned int)
+                             0x4fdd    0xe  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::alloc_memory(unsigned int, char const *, int)
+                             0x4ff9    0xa  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::alloc_name()
+                             0x5013    0x4  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::freeMemoryLeakNode(char *)
+                             0x4feb    0xe  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::free_memory(char *, char const *, int)
+                             0x5003    0xc  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::free_name()
+                             0x5017    0x4  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::hasBeenDestroyed()
+                             0x4faf    0x4  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::isOfEqualType(TestMemoryAllocator*)
+                             0x4fb3   0x2a  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::name()
+                             0x500f    0x4  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::~TestMemoryAllocator()
+                             0x4fa9    0x6  Code  Gb  TestMemoryAllocator.o [6]
+TestMemoryAllocator::~TestMemoryAllocator() [subobject]
+                             0x4e61    0x8  Code  Gb  TestMemoryAllocator.o [6]
+TestOutput::TestOutput()
+                             0x70eb   0x12  Code  Gb  TestOutput.o [6]
+TestOutput::TestOutput() [subobject]
+                             0x70b1    0x8  Code  Gb  TestOutput.o [6]
+TestOutput::color()          0x7105    0x6  Code  Gb  TestOutput.o [6]
+TestOutput::getWorkingEnvironment()
+                             0x70d5   0x16  Code  Gb  TestOutput.o [6]
+TestOutput::print(char const *)
+                             0x710b    0xa  Code  Gb  TestOutput.o [6]
+TestOutput::print(long)
+                             0x7115   0x22  Code  Gb  TestOutput.o [6]
+TestOutput::printCurrentGroupEnded(TestResult const &)
+                             0x720b    0x2  Code  Gb  TestOutput.o [6]
+TestOutput::printCurrentGroupStarted(UtestShell const &)
+                             0x7209    0x2  Code  Gb  TestOutput.o [6]
+TestOutput::printCurrentTestEnded(TestResult const &)
+                             0x7197   0x3e  Code  Gb  TestOutput.o [6]
+TestOutput::printCurrentTestStarted(UtestShell const &)
+                             0x7147   0x50  Code  Gb  TestOutput.o [6]
+TestOutput::printEclipseErrorInFileOnLine(SimpleString, int)
+                             0x7519   0x4e  Code  Gb  TestOutput.o [6]
+TestOutput::printErrorInFileOnLineFormattedForWorkingEnvironment(SimpleString, int)
+                             0x74d1   0x48  Code  Gb  TestOutput.o [6]
+TestOutput::printFailure(TestFailure const &)
+                             0x7385   0x46  Code  Gb  TestOutput.o [6]
+TestOutput::printFailureInTest(SimpleString)
+                             0x7471   0x22  Code  Gb  TestOutput.o [6]
+TestOutput::printFailureMessage(SimpleString)
+                             0x7493   0x36  Code  Gb  TestOutput.o [6]
+TestOutput::printFileAndLineForFailure(TestFailure const &)
+                             0x742f   0x42  Code  Gb  TestOutput.o [6]
+TestOutput::printFileAndLineForTestAndFailure(TestFailure const &)
+                             0x73cb   0x64  Code  Gb  TestOutput.o [6]
+TestOutput::printProgressIndicator()
+                             0x71d5   0x2e  Code  Gb  TestOutput.o [6]
+TestOutput::printTestRun(int, int)
+                             0x733b   0x40  Code  Gb  TestOutput.o [6]
+TestOutput::printTestsEnded(TestResult const &)
+                             0x720d  0x12e  Code  Gb  TestOutput.o [6]
+TestOutput::printTestsStarted()
+                             0x7207    0x2  Code  Gb  TestOutput.o [6]
+TestOutput::printVisualStudioErrorInFileOnLine(SimpleString, int)
+                             0x7567   0x4c  Code  Gb  TestOutput.o [6]
+TestOutput::setProgressIndicator(char const *)
+                             0x7203    0x4  Code  Gb  TestOutput.o [6]
+TestOutput::verbose()        0x70ff    0x6  Code  Gb  TestOutput.o [6]
+TestOutput::workingEnvironment_
+                        0x2000'007c    0x1  Data  Gb  TestOutput.o [6]
+TestOutput::~TestOutput()
+                             0x70fd    0x2  Code  Gb  TestOutput.o [6]
+TestOutput::~TestOutput() [subobject]
+                             0x70b9    0x8  Code  Gb  TestOutput.o [6]
+TestPlugin::TestPlugin(SimpleString const &)
+                             0x5c15   0x22  Code  Gb  TestPlugin.o [6]
+TestPlugin::TestPlugin(SimpleString const &) [subobject]
+                             0x5bfd    0x8  Code  Gb  TestPlugin.o [6]
+TestPlugin::TestPlugin(TestPlugin*)
+                             0x5c37   0x1c  Code  Gb  TestPlugin.o [6]
+TestPlugin::TestPlugin(TestPlugin*) [subobject]
+                             0x5c0d    0x8  Code  Gb  TestPlugin.o [6]
+TestPlugin::addPlugin(TestPlugin*)
+                             0x5c67    0x4  Code  Gb  TestPlugin.o [6]
+TestPlugin::getName()        0x5cff    0x4  Code  Gb  TestPlugin.o [6]
+TestPlugin::getNext()        0x5d03    0x4  Code  Gb  TestPlugin.o [6]
+TestPlugin::parseAllArguments(int, char const **, int)
+                             0x5cbf   0x40  Code  Gb  TestPlugin.o [6]
+TestPlugin::parseArguments(int, char const **, int)
+                             0xdb5d    0x4  Code  Wk  IEEE754ExceptionsPlugin.o [5]
+TestPlugin::removePluginByName(SimpleString const &)
+                             0x5d07   0x2a  Code  Gb  TestPlugin.o [6]
+TestPlugin::runAllPostTestAction(UtestShell &, TestResult &)
+                             0x5c95   0x2a  Code  Gb  TestPlugin.o [6]
+TestPlugin::runAllPreTestAction(UtestShell &, TestResult &)
+                             0x5c6b   0x2a  Code  Gb  TestPlugin.o [6]
+TestPlugin::~TestPlugin()
+                             0x5c53   0x14  Code  Gb  TestPlugin.o [6]
+TestPlugin::~TestPlugin() [subobject]
+                             0x5c05    0x8  Code  Gb  TestPlugin.o [6]
+TestRegistry::TestRegistry()
+                             0x6a89   0x2c  Code  Gb  TestRegistry.o [6]
+TestRegistry::addTest(UtestShell *)
+                             0x6ab5   0x12  Code  Gb  TestRegistry.o [6]
+TestRegistry::currentRegistry_
+                        0x2000'0b38    0x4  Data  Gb  TestRegistry.o [6]
+TestRegistry::endOfGroup(UtestShell *)
+                             0x6d5b   0x74  Code  Gb  TestRegistry.o [6]
+TestRegistry::getCurrentRegistry()
+                             0x6dcf   0x24  Code  Gb  TestRegistry.o [6]
+TestRegistry::getCurrentRegistry()::registry
+                        0x2000'093c   0x20  Data  Lc  TestRegistry.o [6]
+TestRegistry::getCurrentRegistry()::static guard for registry
+                        0x2000'0b5d    0x1  Data  Lc  TestRegistry.o [6]
+TestRegistry::getFirstPlugin()
+                             0x6e5f    0x4  Code  Gb  TestRegistry.o [6]
+TestRegistry::installPlugin(TestPlugin *)
+                             0x6e4d   0x12  Code  Gb  TestRegistry.o [6]
+TestRegistry::listTestGroupAndCaseNames(TestResult &)
+                             0x6c51  0x10a  Code  Gb  TestRegistry.o [6]
+TestRegistry::listTestGroupNames(TestResult &)
+                             0x6b79   0xd8  Code  Gb  TestRegistry.o [6]
+TestRegistry::removePluginByName(SimpleString const &)
+                             0x6e63   0x4e  Code  Gb  TestRegistry.o [6]
+TestRegistry::runAllTests(TestResult &)
+                             0x6ac7   0xb2  Code  Gb  TestRegistry.o [6]
+TestRegistry::setGroupFilters(TestFilter const *)
+                             0x6e19    0x4  Code  Gb  TestRegistry.o [6]
+TestRegistry::setNameFilters(TestFilter const *)
+                             0x6e15    0x4  Code  Gb  TestRegistry.o [6]
+TestRegistry::setRunIgnored()
+                             0x6e1d    0x6  Code  Gb  TestRegistry.o [6]
+TestRegistry::setRunTestsInSeperateProcess()
+                             0x6e23    0x6  Code  Gb  TestRegistry.o [6]
+TestRegistry::testShouldRun(UtestShell *, TestResult &)
+                             0x6e29   0x24  Code  Gb  TestRegistry.o [6]
+TestResult::TestResult(TestOutput &)
+                             0x6f79   0x38  Code  Gb  TestResult.o [6]
+TestResult::addFailure(TestFailure const &)
+                             0x702f   0x16  Code  Gb  TestResult.o [6]
+TestResult::countCheck()
+                             0x7055    0x8  Code  Gb  TestResult.o [6]
+TestResult::countFilteredOut()
+                             0x705d    0x8  Code  Gb  TestResult.o [6]
+TestResult::countRun()       0x704d    0x8  Code  Gb  TestResult.o [6]
+TestResult::countTest()
+                             0x7045    0x8  Code  Gb  TestResult.o [6]
+TestResult::currentGroupEnded(UtestShell *)
+                             0x6fcb   0x1e  Code  Gb  TestResult.o [6]
+TestResult::currentGroupStarted(UtestShell *)
+                             0x6fb3   0x18  Code  Gb  TestResult.o [6]
+TestResult::currentTestEnded(UtestShell *)
+                             0x7011   0x1e  Code  Gb  TestResult.o [6]
+TestResult::currentTestStarted(UtestShell *)
+                             0x6fe9   0x18  Code  Gb  TestResult.o [6]
+TestResult::getCurrentGroupTotalExecutionTime() const
+                             0x70ad    0x4  Code  Gb  TestResult.o [6]
+TestResult::getCurrentTestTotalExecutionTime() const
+                             0x70a9    0x4  Code  Gb  TestResult.o [6]
+TestResult::getFailureCount() const
+                             0x5dcd    0x4  Code  Wk  CommandLineTestRunner.o [6]
+TestResult::getTotalExecutionTime() const
+                             0x70a5    0x4  Code  Gb  TestResult.o [6]
+TestResult::print(char const *)
+                             0x7001   0x10  Code  Gb  TestResult.o [6]
+TestResult::testsEnded()
+                             0x707d   0x1e  Code  Gb  TestResult.o [6]
+TestResult::testsStarted()
+                             0x7065   0x18  Code  Gb  TestResult.o [6]
+TestResult::~TestResult()
+                             0x6fb1    0x2  Code  Gb  TestResult.o [6]
+TestTerminatorWithoutExceptions::exitCurrentTest() const
+                             0x6913    0xa  Code  Gb  Utest.o [6]
+TestTerminatorWithoutExceptions::~TestTerminatorWithoutExceptions()
+                             0x6921    0x2  Code  Gb  Utest.o [6]
+Undefined_Handler            0xdb64         Code  Wk  vectortrap.o [11]
+Utest::Utest()               0x68b5    0x6  Code  Gb  Utest.o [6]
+Utest::Utest() [subobject]
+                             0x63a9    0x8  Code  Gb  Utest.o [6]
+Utest::run()                 0x68c3   0x24  Code  Gb  Utest.o [6]
+Utest::setup()               0x68ed    0x2  Code  Gb  Utest.o [6]
+Utest::teardown()            0x68f1    0x2  Code  Gb  Utest.o [6]
+Utest::testBody()            0x68ef    0x2  Code  Gb  Utest.o [6]
+Utest::~Utest()              0x68c1    0x2  Code  Gb  Utest.o [6]
+Utest::~Utest() [deleting]
+                             0x63b9   0x14  Code  Gb  Utest.o [6]
+Utest::~Utest() [subobject]
+                             0x63b1    0x8  Code  Gb  Utest.o [6]
+UtestShell::UtestShell()
+                             0x644f   0x26  Code  Gb  Utest.o [6]
+UtestShell::UtestShell() [subobject]
+                             0x63e1    0x8  Code  Gb  Utest.o [6]
+UtestShell::UtestShell(char const *, char const *, char const *, int)
+                             0x6475   0x20  Code  Gb  Utest.o [6]
+UtestShell::UtestShell(char const *, char const *, char const *, int) [subobject]
+                             0x63cd    0xc  Code  Gb  Utest.o [6]
+UtestShell::addTest(UtestShell*)
+                             0x6585    0x4  Code  Gb  Utest.o [6]
+UtestShell::assertEquals(bool, char const *, char const *, char const *, char const *, int, TestTerminator const &)
+                             0x6779   0x88  Code  Gb  Utest.o [6]
+UtestShell::assertLongsEqual(long, long, char const *, char const *, int, TestTerminator const &)
+                             0x6717   0x62  Code  Gb  Utest.o [6]
+UtestShell::createTest()
+                             0x64d7   0x1c  Code  Gb  Utest.o [6]
+UtestShell::currentTest_
+                        0x2000'0b40    0x4  Data  Gb  Utest.o [6]
+UtestShell::destroyTest(Utest *)
+                             0x64f3   0x10  Code  Gb  Utest.o [6]
+UtestShell::fail(char const *, char const *, int, TestTerminator const &)
+                             0x66c5   0x52  Code  Gb  Utest.o [6]
+UtestShell::failWith(TestFailure const &, TestTerminator const &)
+                             0x66a5   0x20  Code  Gb  Utest.o [6]
+UtestShell::getCurrent()
+                             0x68a1   0x14  Code  Gb  Utest.o [6]
+UtestShell::getFile() const
+                             0x6605    0xa  Code  Gb  Utest.o [6]
+UtestShell::getFormattedName() const
+                             0x65a9   0x3c  Code  Gb  Utest.o [6]
+UtestShell::getGroup() const
+                             0x659f    0xa  Code  Gb  Utest.o [6]
+UtestShell::getLineNumber() const
+                             0x660f    0x4  Code  Gb  Utest.o [6]
+UtestShell::getMacroName() const
+                             0x6589    0xc  Code  Gb  Utest.o [6]
+UtestShell::getName() const
+                             0x6595    0xa  Code  Gb  Utest.o [6]
+UtestShell::getNext() const
+                             0x6581    0x4  Code  Gb  Utest.o [6]
+UtestShell::getTestResult()
+                             0x6885   0x1c  Code  Gb  Utest.o [6]
+UtestShell::isRunInSeperateProcess() const
+                             0x65e9    0x4  Code  Gb  Utest.o [6]
+UtestShell::match(char const *, TestFilter const *) const
+                             0x6613   0x40  Code  Gb  Utest.o [6]
+UtestShell::print(char const *, char const *, int)
+                             0x6801   0x66  Code  Gb  Utest.o [6]
+UtestShell::runOneTest(TestPlugin *, TestResult &)
+                             0x6497   0x40  Code  Gb  Utest.o [6]
+UtestShell::runOneTestInCurrentProcess(TestPlugin *, TestResult &)
+                             0x6503   0x7e  Code  Gb  Utest.o [6]
+UtestShell::setCurrentTest(UtestShell*)
+                             0x6877    0x6  Code  Gb  Utest.o [6]
+UtestShell::setFileName(char const *)
+                             0x65f5    0x4  Code  Gb  Utest.o [6]
+UtestShell::setGroupName(char const *)
+                             0x65fd    0x4  Code  Gb  Utest.o [6]
+UtestShell::setLineNumber(int)
+                             0x65f9    0x4  Code  Gb  Utest.o [6]
+UtestShell::setRunIgnored()
+                             0x65f3    0x2  Code  Gb  Utest.o [6]
+UtestShell::setRunInSeperateProcess()
+                             0x65ed    0x6  Code  Gb  Utest.o [6]
+UtestShell::setTestName(char const *)
+                             0x6601    0x4  Code  Gb  Utest.o [6]
+UtestShell::setTestResult(TestResult *)
+                             0x6871    0x6  Code  Gb  Utest.o [6]
+UtestShell::shouldRun(TestFilter const *, TestFilter const *) const
+                             0x6653   0x2c  Code  Gb  Utest.o [6]
+UtestShell::testResult_
+                        0x2000'0b3c    0x4  Data  Gb  Utest.o [6]
+UtestShell::willRun() const
+                             0x65e5    0x4  Code  Gb  Utest.o [6]
+UtestShell::~UtestShell()
+                             0x6495    0x2  Code  Gb  Utest.o [6]
+UtestShell::~UtestShell() [subobject]
+                             0x63d9    0x8  Code  Gb  Utest.o [6]
+VStringFromFormat(char const *, __va_list)
+                             0x4d1b   0x90  Code  Gb  SimpleString.o [6]
+Virtual function table for ConsoleTestOutput
+                             0xbe10   0x5c  Data  Wk  TestOutput.o [6]
+Virtual function table for MockFailureReporter
+                             0xd2c4   0x1c  Data  Wk  MockFailure.o [5]
+Virtual function table for NormalTestTerminator
+                             0xd4ac   0x14  Data  Wk  Utest.o [6]
+Virtual function table for TestTerminatorWithoutExceptions
+                             0xd4c0   0x14  Data  Wk  Utest.o [6]
+[local to MemoryLeakDetector_cpp]::calculateVoidPointerAlignedSize(unsigned int)
+                             0x576b    0xc  Code  Lc  MemoryLeakDetector.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::mem_leak_free(void *, char const *, int)
+                             0x4131   0x2e  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::mem_leak_malloc(unsigned int, char const *, int)
+                             0x410d   0x24  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::mem_leak_operator_delete(void *)
+                             0x4261   0x24  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::mem_leak_operator_delete_array(void *)
+                             0x4285   0x24  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::mem_leak_operator_new(unsigned int)
+                             0x41b1   0x1a  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::mem_leak_operator_new_array(unsigned int)
+                             0x4209   0x1a  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::mem_leak_operator_new_array_debug(unsigned int, char const *, int)
+                             0x423d   0x24  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::mem_leak_operator_new_array_nothrow(unsigned int)
+                             0x4223   0x1a  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::mem_leak_operator_new_debug(unsigned int, char const *, int)
+                             0x41e5   0x24  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::mem_leak_operator_new_nothrow(unsigned int)
+                             0x41cb   0x1a  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::mem_leak_realloc(void *, unsigned int, char const *, int)
+                             0x415f   0x2e  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::normal_free(void *, char const *, int)
+                             0x41a5    0xc  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::normal_malloc(unsigned int, char const *, int)
+                             0x418d    0xc  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::normal_operator_delete(void *)
+                             0x42f1    0xc  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::normal_operator_delete_array(void *)
+                             0x42fd    0xc  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::normal_operator_new(unsigned int)
+                             0x42a9    0xc  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::normal_operator_new_array(unsigned int)
+                             0x42cd    0xc  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::normal_operator_new_array_debug(unsigned int, char const *, int)
+                             0x42e5    0xc  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::normal_operator_new_array_nothrow(unsigned int)
+                             0x42d9    0xc  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::normal_operator_new_debug(unsigned int, char const *, int)
+                             0x42c1    0xc  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::normal_operator_new_nothrow(unsigned int)
+                             0x42b5    0xc  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to MemoryLeakWarningPlugin_cpp]::normal_realloc(void *, unsigned int, char const *, int)
+                             0x4199    0xc  Code  Lc  MemoryLeakWarningPlugin.o [6]
+[local to TestFailure_cpp]::addMarkerToString(SimpleString const &, int)
+                             0x5e4b   0x46  Code  Lc  TestFailure.o [6]
+[local to TestFailure_cpp]::removeAllPrintableCharactersFrom(SimpleString const &)
+                             0x5df5   0x56  Code  Lc  TestFailure.o [6]
+[local to TestMemoryAllocator_cpp]::checkedMalloc(unsigned int)
+                             0x4e69   0x3a  Code  Lc  TestMemoryAllocator.o [6]
+[local to UtestPlatform_cpp]::DummyMutexCreate()
+                             0x79b3    0x4  Code  Lc  UtestPlatform.o [7]
+[local to UtestPlatform_cpp]::DummyMutexDestroy(void *)
+                             0x79b7    0x2  Code  Lc  UtestPlatform.o [7]
+[local to UtestPlatform_cpp]::DummyPlatformSpecificRunTestInASeperateProcess(UtestShell *, TestPlugin *, TestResult *)
+                             0x78f5   0x34  Code  Lc  UtestPlatform.o [7]
+[local to UtestPlatform_cpp]::PlatformSpecificFCloseImplementation(void *)
+                             0x79af    0x2  Code  Lc  UtestPlatform.o [7]
+[local to UtestPlatform_cpp]::PlatformSpecificFOpenImplementation(char const *, char const *)
+                             0x79a9    0x4  Code  Lc  UtestPlatform.o [7]
+[local to UtestPlatform_cpp]::PlatformSpecificFPutsImplementation(char const *, void *)
+                             0x79ad    0x2  Code  Lc  UtestPlatform.o [7]
+[local to UtestPlatform_cpp]::PlatformSpecificFlushImplementation()
+                             0x79b1    0x2  Code  Lc  UtestPlatform.o [7]
+[local to UtestPlatform_cpp]::PlatformSpecificLongJmpImplementation()
+                             0x795d   0x1e  Code  Lc  UtestPlatform.o [7]
+[local to UtestPlatform_cpp]::PlatformSpecificSetJmpImplementation(void (*)(void *), void *)
+                             0x7929   0x34  Code  Lc  UtestPlatform.o [7]
+[local to UtestPlatform_cpp]::TimeInMillisImplementation()
+                             0x7989    0xc  Code  Lc  UtestPlatform.o [7]
+[local to UtestPlatform_cpp]::TimeStringImplementation()
+                             0x7995   0x14  Code  Lc  UtestPlatform.o [7]
+[local to Utest_cpp]::helperDoRunOneTestInCurrentProcess(void *)
+                             0x6427   0x14  Code  Lc  Utest.o [6]
+[local to Utest_cpp]::helperDoRunOneTestSeperateProcess(void *)
+                             0x643b   0x14  Code  Lc  Utest.o [6]
+[local to Utest_cpp]::helperDoTestBody(void *)
+                             0x6413    0xa  Code  Lc  Utest.o [6]
+[local to Utest_cpp]::helperDoTestSetup(void *)
+                             0x6409    0xa  Code  Lc  Utest.o [6]
+[local to Utest_cpp]::helperDoTestTeardown(void *)
+                             0x641d    0xa  Code  Lc  Utest.o [6]
+[local to led_driver_c]::_led_driver_init(led_driver_str *)
+                             0xa2cd    0xa  Code  Lc  led_driver.o [2]
+[local to queue_c]::check_read_ptr(queue_str *)
+                             0x9455    0xe  Code  Lc  queue.o [3]
+[local to queue_c]::check_write_ptr(queue_str *)
+                             0x9447    0xe  Code  Lc  queue.o [3]
+_Asctime_tbuf           0x2000'0a58   0x1c  Data  Lc  asctime.o [8]
+_Gentime                     0x8167  0x55e  Code  Gb  xgentime.o [8]
+_Gettime                     0x86c5   0x40  Code  Gb  xgettime.o [8]
+_LitobFullNoMb               0x2ce7  0x10c  Code  Lc  xprintffull_nomb.o [8]
+_LocaleC_Tinfo               0xc3a8   0x4c  Data  Lc  xlocale_c.o [8]
+_PrintfFullNoMb              0x1f09  0xdd8  Code  Gb  xprintffull_nomb.o [8]
+_PutcharFullNoMb             0x2e3d   0x20  Code  Lc  xprintffull_nomb.o [8]
+_PutcharsFullNoMb            0x2e5d   0x2e  Code  Lc  xprintffull_nomb.o [8]
+_SNProut                     0x1db7   0x1a  Code  Gb  xsnprout.o [8]
+_Ttotm_ts               0x2000'0910   0x2c  Data  Lc  xttotm64.o [8]
+_Tzoff                       0x7a73    0x4  Code  Gb  xTzoff_nop.o [8]
+__aeabi_JMP_BUF_SIZE {Abs}
+                               0x10          --   Gb  setjmp.o [10]
+__aeabi_atexit               0x69cb    0xa  Code  Gb  cxxabi.o [9]
+__aeabi_cdcmple              0x3039         Code  Gb  DblCmpLe.o [10]
+__aeabi_cdrcmple             0x306d         Code  Gb  DblCmpGe.o [10]
+__aeabi_d2iz                 0x31a5    0xe  Code  Gb  DblToS32.o [10]
+__aeabi_d2uiz                0x31e5    0xe  Code  Gb  DblToU32.o [10]
+__aeabi_ddiv                 0x31d3   0x12  Code  Gb  DblDiv.o [10]
+__aeabi_dmul                 0x3201   0x12  Code  Gb  DblMul.o [10]
+__aeabi_dsub                 0x31c1   0x12  Code  Gb  DblSub.o [10]
+__aeabi_i2d                  0x31b3    0xe  Code  Gb  S32ToDbl.o [10]
+__aeabi_idiv                 0x3214         Code  Gb  I32DivMod.o [11]
+__aeabi_idiv0                0x3540         Code  Gb  IntDivZer.o [11]
+__aeabi_idivmod              0x3214         Code  Gb  I32DivMod.o [11]
+__aeabi_ldiv0                0x3544         Code  Gb  I64DivZer.o [11]
+__aeabi_ldivmod              0x33bc         Code  Gb  I64DivMod.o [11]
+__aeabi_memset               0xba78         Code  Gb  ABImemset.o [11]
+__aeabi_ui2d                 0x31f3    0xe  Code  Gb  U32ToDbl.o [10]
+__aeabi_uidiv                0x3240         Code  Gb  I32DivMod.o [11]
+__aeabi_uidivmod             0x3240         Code  Gb  I32DivMod.o [11]
+__aeabi_uldivmod             0x3410         Code  Gb  I64DivMod.o [11]
+__aeabi_vec_ctor_nocookie_nodtor
+                             0x69a3   0x28  Code  Gb  cxxabi.o [9]
+__call_ctors                 0x6eb1   0x18  Code  Gb  cppinit.o [8]
+__call_dtors                 0x6f11   0x18  Code  Gb  cppinit.o [8]
+__call_dtors0                0x6f29   0x36  Code  Gb  cppinit.o [8]
+__cexit_call_dtors           0xc0dc         Code  Gb  cexit.o [11]
+__cmain                      0xc04c         Code  Gb  cmain.o [11]
+__cstart_call_dtors          0xdb6c         Data  Gb  cstart_call_dtors.o [11]
+__ctime64                    0x7a03    0xe  Code  Gb  ctime64.o [8]
+__cxa_atexit                 0x6ec9   0x48  Code  Gb  cppinit.o [8]
+__data_GetMemChunk           0x1d87   0x30  Code  Gb  xgetmemchunk.o [8]
+__data_GetMemChunk::start
+                        0x2000'0b50    0x4  Data  Lc  xgetmemchunk.o [8]
+__dso_handle            0x2000'0b4c    0x4  Data  Gb  cppinit.o [8]
+__dwrite                     0xd259   0x14  Code  Gb  dwrite.o [12]
+__exit                       0x1e65   0x14  Code  Gb  exit.o [12]
+__getzone                    0x8799    0x4  Code  Gb  getzone_nop.o [8]
+__iar_CStrftime              0x7c1d   0xda  Code  Gb  xstrftim.o [8]
+__iar_Daysto64               0x7d65   0xae  Code  Gb  xDaysTo64.o [8]
+__iar_Fail_s                 0x2eb1   0x2e  Code  Gb  xfail_s.o [8]
+__iar_Isdst64                0x7e13    0x6  Code  Gb  xisdst_nop64.o [8]
+__iar_Memchr                 0x2f34         Code  Gb  memchr.o [11]
+__iar_Memset                 0xba78         Code  Gb  ABImemset.o [11]
+__iar_Memset_word            0xba80         Code  Gb  ABImemset.o [11]
+__iar_MonTab64               0x7cfd   0x68  Code  Gb  xDaysTo64.o [8]
+__iar_Stolx                  0x8705   0x90  Code  Gb  iar_Stolx.o [8]
+__iar_Stoulx                 0x879d  0x142  Code  Gb  iar_Stoulx.o [8]
+__iar_Strchr                 0x2e90         Code  Gb  strchr.o [11]
+__iar_Ttotm64                0x7a77  0x19c  Code  Gb  xttotm64.o [8]
+__iar_close_ttio             0x1e79   0x2e  Code  Gb  iarttio.o [12]
+__iar_cstart_call_ctors
+                             0xcc2d   0x28  Code  Gb  cmain_call_ctors.o [11]
+__iar_data_init3             0xc081   0x30  Code  Gb  data_init.o [11]
+__iar_debug_exceptions       0x6f5e    0x1  Data  Gb  unwind_debug.o [12]
+__iar_dlfree                 0x149d  0x534  Code  Gb  dlmalloc.o [8]
+__iar_dlmalloc                0x58b  0xf12  Code  Gb  dlmalloc.o [8]
+__iar_dlrealloc              0x1cff   0x82  Code  Gb  dlmalloc.o [8]
+__iar_frexp                  0x2fd5         Code  Gb  frexp.o [10]
+__iar_frexpl                 0x2fd5         Code  Gb  frexp.o [10]
+__iar_get_ttio               0x1ea7   0x58  Code  Gb  iarttio.o [12]
+__iar_init_vfp               0xc038         Code  Gb  fpinit.o [10]
+__iar_init_vfp_v6            0xc024         Code  Gb  fpinit.o [10]
+__iar_ldexp64                0x30b5         Code  Gb  ldexp.o [10]
+__iar_localeC_Tinfo          0x7c13    0xa  Code  Gb  xlocale_c.o [8]
+__iar_lookup_ttioh           0x1eff    0xa  Code  Gb  XShttio.o [8]
+__iar_lz77_init_single3
+                             0xba01   0x78  Code  Gb  lz77_init_single.o [11]
+__iar_program_start          0xbfcc         Code  Gb  cstartup.o [11]
+__iar_return_from_swi        0xdb68    0x4  Code  Gb  xreturnswi.o [12]
+__iar_scalbln64              0x30b5         Code  Gb  ldexp.o [10]
+__iar_scalbn64               0x30b5         Code  Gb  ldexp.o [10]
+__iar_sh_stdout              0xd26d   0x20  Code  Gb  iarwstd.o [12]
+__iar_sh_write               0xcd75   0x22  Code  Gb  iarwrite.o [12]
+__iar_softfp___iar_frexp64
+                             0x2fc9         Code  Gb  frexp.o [10]
+__iar_softfp___iar_ldexp64
+                             0x30a1         Code  Gb  ldexp.o [10]
+__iar_softfp___iar_scalbln64
+                             0x30a1         Code  Gb  ldexp.o [10]
+__iar_softfp___iar_scalbn64
+                             0x30a1         Code  Gb  ldexp.o [10]
+__iar_softfp_frexp           0x2fc9         Code  Gb  frexp.o [10]
+__iar_softfp_frexpl          0x2fc9         Code  Gb  frexp.o [10]
+__iar_softfp_ldexp           0x30a1         Code  Gb  ldexp.o [10]
+__iar_softfp_ldexpl          0x30a1         Code  Gb  ldexp.o [10]
+__iar_softfp_scalbln         0x30a1         Code  Gb  ldexp.o [10]
+__iar_softfp_scalblnl        0x30a1         Code  Gb  ldexp.o [10]
+__iar_softfp_scalbn          0x30a1         Code  Gb  ldexp.o [10]
+__iar_softfp_scalbnl         0x30a1         Code  Gb  ldexp.o [10]
+__iar_tls$$INIT_ARRAY$$Base
+                             0xd848          --   Gb  - Linker created -
+__iar_tls$$INIT_ARRAY$$Limit
+                             0xd848          --   Gb  - Linker created -
+__iar_ttio_handles      0x2000'0074    0x8  Data  Lc  XShttio.o [8]
+__iar_unaligned_memcpy       0x1dd0         Code  Gb  ABImemcpy_unaligned.o [11]
+__iar_unaligned_memcpy4
+                             0x1df4         Code  Gb  ABImemcpy_unaligned.o [11]
+__iar_unaligned_memcpy8
+                             0x1df4         Code  Gb  ABImemcpy_unaligned.o [11]
+__iar_zero_init3             0xc8f5   0x38  Code  Gb  zero_init3.o [11]
+__localtime64                0x7a25   0x20  Code  Gb  localtim64.o [8]
+__low_level_init             0xc07d    0x4  Code  Gb  low_level_init.o [8]
+__sti__routine               0x9d29   0xae  Code  Lc  led_driver_test.o [4]
+__sti__routine               0xaba5   0x28  Code  Lc  MockSupport.o [5]
+__sti__routine               0xd829    0xc  Code  Lc  MockSupport_c.o [5]
+__sti__routine               0x88e5  0x144  Code  Lc  queue_test.o [4]
+__time64                     0x7a11   0x14  Code  Gb  time64.o [12]
+__vector                        0x0         Data  Gb  cstartup.o [11]
+__write                      0xd24d    0xc  Code  Gb  write.o [12]
+_call_main                   0xc064         Code  Gb  cmain.o [11]
+_exit                        0xc0d8         Code  Gb  cexit.o [11]
+_gm_                    0x2000'0580  0x1d8  Data  Lc  dlmalloc.o [8]
+abort                        0x1d81    0x6  Code  Gb  abort.o [8]
+alt_digits                   0x6f5f    0x1  Data  Lc  xlocale_c.o [8]
+am_pm                        0xdaac    0x8  Data  Lc  xlocale_c.o [8]
+asctime                      0x7a45   0x2e  Code  Gb  asctime.o [8]
+clock                        0x79f5    0xa  Code  Gb  clock.o [12]
+cmp_era_date                 0x8055   0x74  Code  Lc  xgentime.o [8]
+ctime                        0x7a03    0xe  Code  Gb  ctime64.o [8]
+currentMallocAllocator  0x2000'0b30    0x4  Data  Lc  TestMemoryAllocator.o [6]
+currentNewAllocator     0x2000'0b28    0x4  Data  Lc  TestMemoryAllocator.o [6]
+currentNewArrayAllocator
+                        0x2000'0b2c    0x4  Data  Lc  TestMemoryAllocator.o [6]
+days                         0xbf74   0x58  Data  Lc  xlocale_c.o [8]
+defaultMallocAllocator()
+                             0x4f6b   0x28  Code  Gb  TestMemoryAllocator.o [6]
+defaultMallocAllocator()::allocator
+                        0x2000'0ab4   0x14  Data  Lc  TestMemoryAllocator.o [6]
+defaultMallocAllocator()::static guard for allocator
+                        0x2000'0b5a    0x1  Data  Lc  TestMemoryAllocator.o [6]
+defaultNewAllocator()        0x4ec5   0x34  Code  Gb  TestMemoryAllocator.o [6]
+defaultNewAllocator()::allocator
+                        0x2000'0a8c   0x14  Data  Lc  TestMemoryAllocator.o [6]
+defaultNewAllocator()::static guard for allocator
+                        0x2000'0b58    0x1  Data  Lc  TestMemoryAllocator.o [6]
+defaultNewArrayAllocator()
+                             0x4f1b   0x32  Code  Gb  TestMemoryAllocator.o [6]
+defaultNewArrayAllocator()::allocator
+                        0x2000'0aa0   0x14  Data  Lc  TestMemoryAllocator.o [6]
+defaultNewArrayAllocator()::static guard for allocator
+                        0x2000'0b59    0x1  Data  Lc  TestMemoryAllocator.o [6]
+digits                       0xc1b8   0x28  Data  Lc  iar_Stoulx.o [8]
+dispose_chunk                  0xd3  0x4b8  Code  Lc  dlmalloc.o [8]
+era                          0x78ee    0x1  Data  Lc  xlocale_c.o [8]
+exit                         0xc0d5    0x4  Code  Gb  exit.o [8]
+failureReporterForC     0x2000'0aec    0x8  Data  Lc  MockSupport_c.o [5]
+fmts                         0xc9f0   0x30  Data  Lc  xlocale_c.o [8]
+free                         0x965b    0x4  Code  Gb  heaptramp0.o [8]
+free_fptr               0x2000'0004    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+getCurrentMallocAllocator()
+                             0x4f4d   0x12  Code  Gb  TestMemoryAllocator.o [6]
+getCurrentNewAllocator()
+                             0x4ea3   0x14  Code  Gb  TestMemoryAllocator.o [6]
+getCurrentNewArrayAllocator()
+                             0x4ef9   0x14  Code  Gb  TestMemoryAllocator.o [6]
+getera                       0x80c9   0x9e  Code  Lc  xgentime.o [8]
+getval                       0x7e19   0x6c  Code  Lc  xgentime.o [8]
+globalDetector          0x2000'0b04    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+globalReporter          0x2000'0b00    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+global_mock             0x2000'08bc   0x54  Data  Lc  MockSupport.o [5]
+init_mparams                   0x59   0x40  Code  Lc  dlmalloc.o [8]
+init_top                       0x99   0x3a  Code  Lc  dlmalloc.o [8]
+isleapyr                     0x7e85   0x64  Code  Lc  xgentime.o [8]
+jmp_buf_index           0x2000'0b44    0x4  Data  Lc  UtestPlatform.o [7]
+ldexp                        0x30b5         Code  Gb  ldexp.o [10]
+ldexpl                       0x30b5         Code  Gb  ldexp.o [10]
+led_driver_create()          0xa2d7   0x18  Code  Gb  led_driver.o [2]
+led_driver_destroy(led_driver_str *)
+                             0xa2ef    0x8  Code  Gb  led_driver.o [2]
+led_driver_get_order(led_driver_str const *)
+                             0xa2fb    0x4  Code  Gb  led_driver.o [2]
+led_driver_get_status(led_driver_str const *)
+                             0xa2f7    0x4  Code  Gb  led_driver.o [2]
+led_driver_set_order(led_driver_str *, led_order_estr)
+                             0xa2ff    0xc  Code  Gb  led_driver.o [2]
+lmos                         0xca20   0x18  Data  Lc  xDaysTo64.o [8]
+localtime                    0x7a25   0x20  Code  Gb  localtim64.o [8]
+longjmp                      0x79dc         Code  Gb  setjmp.o [10]
+main                         0xc0b1   0x1c  Code  Gb  main.o [1]
+malloc_fptr             0x2000'0000    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+memchr                       0x2f34         Code  Gb  memchr.o [11]
+memset                       0xd6d5   0x14  Code  Gb  memset.o [11]
+mons                         0xb978   0x88  Data  Lc  xlocale_c.o [8]
+mos                          0xca38   0x18  Data  Lc  xDaysTo64.o [8]
+mparams                 0x2000'0a74   0x18  Data  Lc  dlmalloc.o [8]
+ndigs                        0xc190   0x28  Data  Lc  iar_Stoulx.o [8]
+next_abi_dtor_rec       0x2000'0b48    0x4  Data  Lc  cppinit.o [8]
+operator !=(SimpleString const &, SimpleString const &)
+                             0x4a39   0x14  Code  Gb  SimpleString.o [6]
+operator <<(TestOutput &, char const *)
+                             0x7137   0x10  Code  Gb  TestOutput.o [6]
+operator ==(SimpleString const &, SimpleString const &)
+                             0x4a13   0x26  Code  Gb  SimpleString.o [6]
+operator delete (void *, unsigned int)
+                             0x4321    0xc  Code  Gb  MemoryLeakWarningPlugin.o [6]
+operator new (unsigned int)
+                             0x4309    0xc  Code  Gb  MemoryLeakWarningPlugin.o [6]
+operator new (unsigned int, char const *, int)
+                             0x4315    0xc  Code  Gb  MemoryLeakWarningPlugin.o [6]
+operator_delete_array_fptr
+                        0x2000'0028    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+operator_delete_fptr    0x2000'0024    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+operator_new_array_debug_fptr
+                        0x2000'0020    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+operator_new_array_fptr
+                        0x2000'0018    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+operator_new_array_nothrow_fptr
+                        0x2000'001c    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+operator_new_debug_fptr
+                        0x2000'0014    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+operator_new_fptr       0x2000'000c    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+operator_new_nothrow_fptr
+                        0x2000'0010    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+pointerTableIndex       0x2000'0b34    0x4  Data  Lc  TestPlugin.o [6]
+putchar                      0xd22d   0x20  Code  Gb  putchar.o [8]
+queue_clear(queue_str *)
+                             0x9473   0x14  Code  Gb  queue.o [3]
+queue_create(queue_data_types, unsigned int)
+                             0x9421   0x26  Code  Gb  queue.o [3]
+queue_data_read(queue_str *, void *, unsigned int)
+                             0x9569   0xf2  Code  Gb  queue.o [3]
+queue_data_write(queue_str *, void *, unsigned int)
+                             0x948f   0xda  Code  Gb  queue.o [3]
+queue_get_size(queue_str *)
+                             0x948b    0x4  Code  Gb  queue.o [3]
+queue_get_type(queue_str *)
+                             0x9487    0x4  Code  Gb  queue.o [3]
+queue_is_empty(queue_str *)
+                             0x9463   0x10  Code  Gb  queue.o [3]
+realloc                      0x965f    0x4  Code  Gb  heaptramp0.o [8]
+realloc_fptr            0x2000'0008    0x4  Data  Lc  MemoryLeakWarningPlugin.o [6]
+scalbln                      0x30b5         Code  Gb  ldexp.o [10]
+scalblnl                     0x30b5         Code  Gb  ldexp.o [10]
+scalbn                       0x30b5         Code  Gb  ldexp.o [10]
+scalbnl                      0x30b5         Code  Gb  ldexp.o [10]
+scale                        0x2df3   0x4a  Code  Lc  xprintffull_nomb.o [8]
+sec_hand                0x2000'0b54    0x4  Data  Lc  xfail_s.o [8]
+segment_holding                0x3d   0x1c  Code  Lc  dlmalloc.o [8]
+setCurrentMallocAllocatorToDefault()
+                             0x4f5f    0xc  Code  Gb  TestMemoryAllocator.o [6]
+setCurrentNewAllocatorToDefault()
+                             0x4eb7    0xe  Code  Gb  TestMemoryAllocator.o [6]
+setCurrentNewArrayAllocatorToDefault()
+                             0x4f0d    0xe  Code  Gb  TestMemoryAllocator.o [6]
+setjmp                       0x79cc         Code  Gb  setjmp.o [10]
+setlist                 0x2000'0758  0x100  Data  Lc  TestPlugin.o [6]
+strchr                       0x2e90         Code  Gb  strchr.o [11]
+strlen                       0x2ee0         Code  Gb  strlen.o [11]
+strtol                       0x8795    0x4  Code  Gb  iar_Stolx.o [8]
+test_exit_jmp_buf       0x2000'0080  0x500  Data  Lc  UtestPlatform.o [7]
+time                         0x79ff    0x4  Code  Gb  time_trampoline.o [8]
+try_realloc_chunk            0x19d1  0x32e  Code  Lc  dlmalloc.o [8]
+vsnprintf                    0xc7cd   0x40  Code  Gb  vsnprint.o [8]
+wkyr                         0x7ee9   0x3c  Code  Lc  xgentime.o [8]
+
+
+[1] = C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj
+[2] = C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\Work_Space\Project\led_driver
+[3] = C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\Work_Space\Project\queue
+[4] = C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\Work_Space\Testers
+[5] = C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_mock_src
+[6] = C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\cpputest_src
+[7] = C:\Users\SAYKAL\Desktop\iar_cpputest\Debug\Obj\platforms
+[8] = dl7Sx_tln.a
+[9] = dlpprt7Sx_tl_nc.a
+[10] = m7Sx_tlv.a
+[11] = rt7Sx_tl.a
+[12] = sh7Sxs_l.a
+
+  46'479 bytes of readonly  code memory
+   9'799 bytes of readonly  data memory
+  68'872 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
